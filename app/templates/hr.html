@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HR Input Form</title>
+</head>
+<body>
+  <h1>HR Input Form</h1>
+  <form id="hrInputForm">
+    <label for="jobRole">Job Role:</label><br>
+    <input type="text" id="jobRole" name="jobRole"><br>
+
+    <label for="jobDescription">Job Description:</label><br>
+    <textarea id="jobDescription" name="jobDescription"></textarea><br>
+
+    <label for="keySkills">Key Skills:</label><br>
+    <input type="text" id="keySkills" name="keySkills"><br>
+
+    <label for="requiredExperience">Required Experience:</label><br>
+    <input type="text" id="requiredExperience" name="requiredExperience"><br><br>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    document.getElementById("hrInputForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const formData = new FormData(this);
+      const jsonFormData = {};
+
+      for (const [key, value] of formData.entries()) {
+        jsonFormData[key] = value;
+      }
+
+      fetch('/save_hr_input_and_generate_questions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(jsonFormData),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+        // You can handle success, display a message, or redirect the user
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+        // Handle errors here
+      });
+    });
+  </script>
+</body>
+</html>
