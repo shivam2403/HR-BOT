@@ -1,22 +1,74 @@
-from flask import Blueprint, jsonify, request, render_template
-from app.models import db, Candidate, Question, HRInput, CandidateResponse
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask_login import login_user, login_required, logout_user, current_user
+from .models import db, User, Candidate, Question, HRInput, CandidateResponse
 import openai
 import json
 import re
-from flask import Blueprint
 
 routes_blueprint = Blueprint('routes', __name__)
+
+@routes_blueprint.route('/')
+
+def home():
+    return render_template('index.html')
+
+@routes_blueprint.route('/protected')
+@login_required
+def protected():
+    return 'This is a protected route.'
+
+@routes_blueprint.route('/login', methods=['GET', 'POST'])
+def login():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+        
+        user = User.query.filter_by(username=username).first()
+
+        if user and user.check_password(password):
+            login_user(user)
+            flash('Login successful!', 'success')
+            return redirect(url_for('routes.home'))
+        else:
+            flash('Login failed. Check your username and password.', 'danger')
+
+    return render_template('login.html')
+
+@routes_blueprint.route('/logout')
+@login_required
+def logout():
+    logout_user()
+    flash('Logout successful!', 'success')
+    return redirect(url_for('routes.login'))
+
+@routes_blueprint.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        username = request.form['username']
+        password = request.form['password']
+
+        existing_user = User.query.filter_by(username=username).first()
+
+        if existing_user:
+            flash('Username already exists. Choose a different one.', 'danger')
+        else:
+            new_user = User(username=username)
+            new_user.set_password(password)
+            db.session.add(new_user)
+            db.session.commit()
+            flash('Registration successful! You can now log in.', 'success')
+            return redirect(url_for('routes.login'))
+
+    return render_template('register.html')
+
 @routes_blueprint.route('/hr')
+@login_required
 def index():
     return render_template('hr.html')
 
 
-@routes_blueprint.route('/')
-def home():
-    return render_template('index.html')
-
-
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
+@login_required
 def save_hr_input_and_generate_questions():
     data = request.json
 
@@ -44,7 +96,7 @@ def save_hr_input_and_generate_questions():
 
     return jsonify({'message': 'HR inputs and questions saved successfully'})
 
-
+@login_required
 def generate_hr_questions(role):
     test_message = [
         {"role": "system", "content": "HR Interview Bot generates role-specific questions."},
@@ -60,11 +112,11 @@ def generate_hr_questions(role):
 
     return complete['choices'][0]['message']['content']
 
-
+@login_required
 def extract_questions(generated_questions):
     return [q.strip() for q in re.split(r'\n\s*\d+\.\s*', generated_questions) if q.strip()]
 
-
+@login_required
 @routes_blueprint.route('/save_questions/<job_role>', methods=['POST'])
 def save_questions(job_role):
     generated_questions = generate_hr_questions(job_role)
@@ -76,7 +128,7 @@ def save_questions(job_role):
 
     return jsonify({'message': f'Questions for {job_role} role saved successfully'})
 
-
+@login_required
 @routes_blueprint.route('/get_question/<job_role>', methods=['GET'])
 def get_question(job_role):
     question_id = int(request.args.get('question_id', 1))
@@ -94,6 +146,7 @@ def get_question(job_role):
     else:
         return jsonify({'message': 'No questions available for this job role'})
     
+@login_required   
 @routes_blueprint.route('/submit_response', methods=['POST'])
 def submit_response():
     data = request.json
@@ -131,7 +184,7 @@ def submit_response():
 
     return jsonify({'message': 'Candidate response saved successfully'})
 
-
+@login_required
 def find_best_fit_candidates(job_role):
     system_message = "HR Interview Bot analyzes best-fit candidates based on their responses for job matching."
 
@@ -183,7 +236,7 @@ def find_best_fit_candidates(job_role):
     return best_fit_candidates
 
    
-
+@login_required
 @routes_blueprint.route('/get_best_fit_candidates/<job_role>', methods=['GET'])
 def get_best_fit_candidates(job_role):
     try:
