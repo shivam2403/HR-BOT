@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+
+<body>
+
+    {% if Status == 'success' %}
+        <h1>Best Fit Candidates</h1>
+        <h2>{{Data}}</h2>
+        <table border="1">
+            <tr>
+                <th>Candidate ID</th>
+                <th>Fit Score</th>
+            </tr>
+            {% for candidate in Data['best_fit_candidates'] %}
+            <tr>
+                <td>{{ candidate['candidate_id'] }}</td>
+                <td>{{ candidate['fit_score'] }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+    {% else %}
+        <p style="color: red;">An error occurred: {{ Status }}</p>
+    {% endif %}
+
+</body>
+
+</html>
