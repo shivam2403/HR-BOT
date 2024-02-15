@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Candidate Interview</title>
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="nav">
+        <h1 style="font-size: 40px;">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></h1>
+          <a href="/google_logout"><button class="btn">Logout</button></a>
+      </div>
+      <div class="user_info" style="display: flex;flex-direction: column;gap: 5px; font-size: 30px; margin-top: 20px;">
+        {% if user %}
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Name:</span> {{ user.username }}</div>
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Email:</span> {{ user.email }}</div>
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Phone no:</span> {{ user.phone }}</div>
+        {% elif google_name %}
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Name:</span> {{ google_name }}</div>
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Email:</span> {{ google_email }}</div>
+          <div style="color: rgb(56, 56, 56);"><span style="font-weight: bold;">Phone no:</span> Not Available</div>
+        {% endif %}
+
+      </div>
+      <div class="d_ul">
+        <h1 style="color:rgb(48, 48, 48);">Performance List</h1>
+        <div class="d_ul_li">
+          <li style="font-weight: bold; font-size: 34px;color:#64d48d;">Company</li>
+          <li style="font-weight: bold; font-size: 34px;color:#64d48d;">Role</li>
+          <li style="font-weight: bold; font-size: 34px;color:#64d48d;">Status</li>
+        </div>
+        <div class="d_ul_li">
+          <li>XYZ Company</li>
+          <li>Frontend Intern</li>
+          <li>Selected</li>
+        </div>
+        <div class="d_ul_li">
+          <li>ABC Company</li>
+          <li>Backend Intern</li>
+          <li>Not selected</li>
+        </div>
+        <div class="d_ul_li">
+          <li>EXP PVT. LTD.</li>
+          <li>Data Intern</li>
+          <li>Not selected</li>
+        </div>
+        <div class="d_ul_li">
+          <li>DAV Company</li>
+          <li>Django Intern</li>
+          <li>Selected</li>
+        </div>
+      </div>
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+          var nav = document.querySelector(".nav");
+
+          window.addEventListener("scroll", function () {
+              if (window.scrollY > 0) {
+                  nav.classList.add("scrolled");
+              } else {
+                  nav.classList.remove("scrolled");
+              }
+          });
+      });
+    </script>
+  </body>
+</html>

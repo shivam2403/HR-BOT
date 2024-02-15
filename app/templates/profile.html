@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="profile">
+        <div class="nav">
+            <h1 style="font-size: 40px;">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></h1>
+              <a href="/google_logout"><button class="btn">Logout</button></a>
+          </div>
+
+        <h1>User Profile</h1>
+        
+        <!-- Display user profile information -->
+        <p>Username: {{ user.username }}</p>
+        <p>Email: {{ user.email }}</p>
+        <!-- Add other properties here -->
+        
+        <!-- Display the skillset as a comma-separated list -->
+        <p>Skillset: {{ ', '.join(user.skillset) }}</p>
+        
+        <!-- Add other property displays here -->
+        
+        <!-- Edit button to trigger the editing form -->
+        <a href="{{ url_for('routes.user_profile', user_id=user.id) }}">Edit Profile</a>
+    </div>
+    </body>
+    </html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/login.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="login">
+      <div class="l_left">
+        <h1 style="font-size: 60px;">Log In</h1>
+        <form class="l_form" action="/login" method="POST">
+          <div class="l_email">
+            <label for="email" class="form-label">Email</label>
+            <input type="email" class="form-control l_input" name="email" id="email" />
+          </div>
+          <div class="l_password">
+            <label for="password" class="form-label">Password</label>
+            <input
+              type="password"
+              class="form-control l_input"
+              name="password"
+              id="password"
+            />
+          </div>
+          <button type="submit" class="l_btn">Log In</button>
+          <span>or</span>
+        </form>
+        <a href="/google_login" class="l_google_btn">
+         <img style="height: 20px; width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" alt="">Continue with Google</a>
+        <div>
+          <span>Don't have an account?  </span
+          >
+          <a href="/signup" style="text-decoration: none;">SignUp</a>
+        </div>
+      </div>
+      <div class="l_right">
+        <h1 class="l_right_title">FunnelHQ</h1>
+        <div class="l_right_hr">
+          <h2 class="l_right_hr_title">HRbot</h2>
+          <p class="l_right_hr_desc">Revolutionize HR processes with our innovative HRbot project. Streamline employee onboarding, automate routine tasks, and enhance communication. Boost efficiency, engagement, and workplace satisfaction with cutting-edge AI-powered HR solutions.</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

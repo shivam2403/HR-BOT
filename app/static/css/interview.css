@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.interview{
+    position: relative;
+}
+
+html{
+    font-family: 'poppins', sans-serif;
+    /* color: #2bbe60; */
+    background-color: rgb(238, 238, 238);
+}
+
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container{
+    /* background-color: white; */
+    position: absolute;
+    top: 180px;
+    right: 10px;
+}
+
+.circle-container{
+    width: 200px;
+    height: 200px;
+    background-color: #ddd;
+    border-radius: 50%;
+    position: absolute;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.semicircle{
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform-origin:right center;
+}
+
+.semicircle:nth-child(1){
+    background-color: #2bbe60;
+    z-index: 2;
+}
+.semicircle:nth-child(2){
+    background-color: #2bbe60;
+    z-index: 3;
+}
+.semicircle:nth-child(3){
+    background-color: #ddd;
+    z-index: 4;
+}
+
+.outermost-circle{
+    width: 190px;
+    height: 190px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 5;
+}
+
+.timer-container{
+    width: 230px;
+    height: 100px;
+    z-index: 6;
+}
+
+.timer{
+    width: 200px;
+    height: 70px;
+    z-index: 7;
+    color: black;
+}
+
+.timer div{
+    font-size: 35px;
+    font-weight: 80;
+    width: 60px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin :0 10px 0 10px;
+}
+
+.timer .colon{
+    background-color: transparent;
+    width: 10px;
+    margin-left: 0;
+    margin-right: 0;
+    padding-bottom: 15px;
+}
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    background-color: white;
+    color: black;
+    padding: 0 40px;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,.16); */
+    position: sticky;
+    top: 0;
+}
+
+.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #2bbe60;
+}
+
+.questions-container{
+    flex-direction: column;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/css/interview.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    <div class="interview">
+        <div class="nav">
+            <h1 style="font-size: 40px;">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></h1>
+            <a href="/google_logout"><button class="btn">Logout</button></a>
+      </div>
+
+      <div class="questions-container">
+        <h2>Interview Questions</h2>
+        {% if questions %}
+            <ul>
+                {% for question in questions %}
+                    <li>{{ question.content }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            <p>{{ message }}</p>
+        {% endif %}
+    </div>
+
+      <div class="main-container center">
+        <!-- progress container -->
+        <div class="circle-container center">
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="semicircle"></div>
+            <div class="outermost-circle"></div>
+        </div>
+        
+        <!-- timer container -->
+        <div class="timer-container center">
+            <div class="timer center">
+
+            </div>
+        </div>
+
+    </div>
+</div>
+    <script src="../static/js/script.js"></script>
+</body>
+    
+</html>

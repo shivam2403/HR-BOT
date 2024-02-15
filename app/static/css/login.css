@@ -1,0 +1,130 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.login{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.l_left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.l_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.l_password{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    gap: 5px;
+}
+
+.l_email{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    gap: 5px;
+}
+
+.l_input{
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid black;
+}
+
+.l_btn{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    background-color: #2bbe60;
+}
+
+.l_btn:hover{
+
+}
+
+.l_google_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+.l_google_btn:hover{
+    background-color: #2bbe60;
+    color: white;
+    border: 1px solid white;
+}
+
+.l_right{
+    background: url('https://www.clker.com/cliparts/5/4/8/a/12401655391311375203boobaloo_Chemistry_Conical_Funnel.svg.hi.png');
+    background-color: rgba(128, 128, 128, 0.5);
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.l_right_title{
+    font-size: 60px;
+    margin-left: 30px;
+    color: black;
+    
+}
+
+.l_right_hr{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.l_right_hr_title{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.l_right_hr_desc{
+    font-size: 20px;
+}
+
+.l_signup{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}

@@ -1,0 +1,1713 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:41] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:44] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:44] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:53] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:58] "[32mGET /callback?state=ApdQi6FL5QpgqJliUG4tcHrhy4EF0O&code=4/0AeaYSHBPmT0a-Y66mCO8Hhh-EoJLItuR_WDHij0HwVLtcA8L89Lo9P8Avg8_98MNfPTh8A&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=1&hd=iiitvadodara.ac.in&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:27:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:28:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:28:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:29:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:29:02] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:52:59] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:03] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:03] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:35] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:43] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:43] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:49] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:53:49] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:07] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:19] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:21] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:21] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:27] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:27] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:28] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:35] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:35] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:42] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:43] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:54] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:54] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:54:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:05] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:05] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:07] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:26] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:26] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:27] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:35] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:35] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:36] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:37] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:37] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'signup' route: (sqlite3.IntegrityError) UNIQUE constraint failed: candidate.phone
+[SQL: INSERT INTO candidate (username, email, phone, password) VALUES (?, ?, ?, ?)]
+[parameters: ('shivam', 'sp4227944@gmail.com', '1234567891', '$2b$12$9nVqGQ3JJ.gQ2pDwKwRMOeZs4UHzo2sfA3T/HBdXoog9fC/eg.vUO')]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:55:59] "[35m[1mPOST /signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:14] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:14] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:14] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:23] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:23] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:30] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:30] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:45] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:56:45] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:06] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:08] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:15] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:15] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:23] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:23] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:40] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:40] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:59] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:57:59] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:02] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:02] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:10] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:10] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:17] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:17] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:31] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:37] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:40] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:40] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:58:56] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:02] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:02] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:13] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:13] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:29] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:29] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:41] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:41] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:48] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 14:59:49] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:03] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:17] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:00:17] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:04:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:04:42] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:04:54] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:04:55] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:07] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:12] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:12] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:24] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:24] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:36] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:39] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:39] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:39] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:56] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:59] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:05:59] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:08] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:08] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:15] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:15] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:06:17] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:32] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:33] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:44] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:57] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:10:57] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:01] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:01] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:03] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:09] "[32mGET /callback?state=5Ju76uCgQkofMuVS8HvVPfuDs0nYEx&code=4/0AeaYSHAObKV1fJFYyTHx3Pe9WaPjVv-8f0Vjg-PilfaiFpFXMDQJKfzEHu-OwZHXXSXl4w&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:09] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:15] "[33mGET /secret HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:19] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:23] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:23] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:44] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:44] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+ERROR:root:OTP Verification Failed
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:48] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:48] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:51] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:51] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:59] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:11:59] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:12:46] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:12:46] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:12:46] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:12:57] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:12:57] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:13:35] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:13:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:13:35] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:14:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:14:35] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:14:41] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:14:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:15:55] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:15:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:15:55] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:07] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:07] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:25] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:25] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+ERROR:root:OTP Verification Failed
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:28] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:28] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:30] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:42] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:42] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:52] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:16:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:42] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:42] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:46] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:58] "[32mGET /callback?state=CBmW9dlZ9aAT5uRsLqwq5sgF7VLbt8&code=4/0AeaYSHD_B4a785zomuicgUzCONuaGF6oWggPUhGhxJFTJBCCKre70f3D7YK7k3eTE2k5UA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:18:59] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 15:46:35] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:20] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:22] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:33] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:33] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:34] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:55] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:39:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:40:02] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:40:02] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:40:06] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:40:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:40:06] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:05] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:17] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:17] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+ERROR:root:OTP Verification Failed
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:58] "POST /verify HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:45:58] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:01] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:26] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:26] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:42] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:42] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:51] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [13/Feb/2024 23:46:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:47] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:48] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:48] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:50] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:55] "[32mGET /callback?state=UVqvYRDfGzhhVpUDJcXKbSOTwzyUQz&code=4/0AfJohXmGwZehWWFxAVra1sVBX2XU8NaYXjHAaeXnk2Skmm8kqPOYlTrJDxTuxAxdPFj8UQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:28:55] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:35:36] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:36:07] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:36:07] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:36:26] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:36:26] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:37:40] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:37:40] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:50:18] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:50:18] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:18] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:18] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:20] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:20] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:47] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:53:47] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:54:58] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:54:58] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:56:24] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:56:24] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:56:43] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 00:56:43] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:00:18] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:00:18] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:00:35] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:00:35] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:01:26] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:01:26] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:01:28] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:01:28] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:02:32] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:02:32] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:02:40] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:02:40] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:27] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:34] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:34] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:35] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:35] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:51] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:03:51] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:04:09] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:04:09] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:14:43] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:14:43] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:20:40] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:20:40] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:20:53] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:20:53] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:21:03] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:21:03] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:21:10] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:21:10] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:22:30] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:22:30] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:23:25] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:23:25] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:06] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:06] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:36] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:36] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:45] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:26:45] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:28:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:28:27] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:28:27] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:34:42] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:34:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:34:43] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:03] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:03] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:03] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:21] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:21] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:21] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:25] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:25] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:26] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:26] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:28] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:28] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:36:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:40:13] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:40:13] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:40:13] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:52:55] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:52:55] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:52:55] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:53:50] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:53:50] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:53:50] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:08] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:08] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:08] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:14] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:14] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:22] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:22] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 01:54:22] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:14] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:14] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:40] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:40] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:05:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:17] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:17] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:17] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:59] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:59] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:06:59] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:32] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:32] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:32] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:47] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:47] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:08:47] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:09:04] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:09:04] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:09:04] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:10:31] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:10:32] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:10:32] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:11:02] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:11:02] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:11:02] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:12:01] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:12:01] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:12:01] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:23] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:23] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:23] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:46] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:46] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:13:46] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:14:25] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:14:25] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:14:25] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:15:31] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:15:31] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:15:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:06] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:06] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:06] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:14] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:27] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:41] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:41] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:41] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:46] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:46] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:56] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:56] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:16:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:04] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:04] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:28] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:28] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:51] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:51] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:17:51] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:14] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:33] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:33] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:33] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:54] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:54] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:54] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:18:54] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:04] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:04] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:18] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:18] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:21] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:22] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:22] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:22] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:30] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:30] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:39] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:39] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:48] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:48] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:48] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:53] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:53] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:19:59] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:00] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:11] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:11] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:18] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:18] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:18] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:19] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:20] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:24] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:24] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:24] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:29] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:29] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:20:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:21:44] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:21:44] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:21:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:21:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:11] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:11] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:11] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:19] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:19] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:26] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:26] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:26] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:26] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:27] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:34] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:34] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:41] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:42] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:50] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:50] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:50] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:22:50] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:03] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:04] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:11] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:11] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:12] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:12] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:28] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:28] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:28] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:34] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:34] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:44] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:44] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:23:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:00] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:00] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:08] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:08] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:08] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:14] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:16] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:16] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:20] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:21] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:21] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:21] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:24] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:25] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:25] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:25] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:31] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:31] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:36] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:36] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:24:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:15] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:16] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:27] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:40] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:40] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:40] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:25:59] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:00] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:47] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:47] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:47] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:51] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:51] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:56] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:56] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:57] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:57] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:57] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:26:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:05] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:05] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:05] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:15] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:15] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:15] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:23] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:23] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:30] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:30] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:35] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:36] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:27:36] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:15] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:15] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:15] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:31] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:31] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:39] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:39] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:28:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:29:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:29:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:30:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:30:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:36] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:36] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:36] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:39] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:39] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:42] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:44] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:51] "[32mGET /callback?state=c2Mn3OHlgKTyTrw1oZBg2wfdLcvlMI&code=4/0AeaYSHCMeGGsPUIJVWqAbAhl39F_hxuiL08u7YQVW1VKj3JNtxszaI0MmKR0gGeZ_MciTQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:34:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:35:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:35:35] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:35:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:35:57] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:30] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:47] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:36:58] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:17] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:49] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:49] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:49] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:49] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:37:54] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:39:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:39:43] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:08] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:21] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:31] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:39] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:40:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:13] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:25] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:32] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:41:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:42:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:42:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:42:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:42:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:49:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:49:33] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:50:42] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:50:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:17] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:28] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:28] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:28] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:46] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:46] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:46] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:46] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:52] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:52] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:51:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:52:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:52:26] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:53:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:53:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:53:43] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:53:43] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:09] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:54:53] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:56:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:14] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:35] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:42] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:48] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:57:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:12] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:29] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:33] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:58:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:11] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:16] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:20] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 02:59:53] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:09] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:28] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:37] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:49] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:00:49] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:01:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:01:28] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:01:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:01:53] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:02:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:02:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:02:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:02:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:04:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:04:01] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:04:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:04:57] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:03] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:13] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:19] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:05:27] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:32] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:46] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:06:56] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:06] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:06] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:29] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:36] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:41] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:42] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:07:43] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:13] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:20] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:31] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:32] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:08:39] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:09] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:21] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:09:37] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:10:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:10:54] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:10:59] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:10:59] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:09] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:10] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:35] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:35] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:45] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:11:45] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:03] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:14] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:23] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:44] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:12:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:01] "[33mGET /inerview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:07] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:07] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:27] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:35] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:58] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:13:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:14:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:14:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:00] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:31] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:31] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:15:31] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:16:55] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:16:55] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:16:55] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:16:56] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:08] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:08] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:08] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:08] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:49] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:49] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:18:59] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:00] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:20] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:28] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:19:28] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:30] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:31] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:45] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:20:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:13] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:13] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:21] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:21] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:45] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:45] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:54] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:21:54] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:17] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:17] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:31] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:31] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:38] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:46] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:22:46] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:23:36] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:23:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:23:42] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:23:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:24:00] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:24:00] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:24:39] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:24:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:25:29] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:25:29] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:25:42] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:25:42] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:25] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:25] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:40] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:56] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:26:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:27:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:17] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:17] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:21] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:27] "[32mGET /callback?state=Qex3cZRZmjGXFTfh2oJhAhsrhDdTsG&code=4/0AeaYSHBsCIqmQ92lE1cTCU9i6T7PVQ0lJpGDTUKg6BHVtbj35OV0BpV3TSr6y4vyjJF-Eg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:36] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:45] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:45] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:45] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:57] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:28:57] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:29:03] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:29:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 03:29:03] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:38] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:38] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:39] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:40] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:53] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:57:53] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:58:13] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:58:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 13:58:13] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:15] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:25] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:39] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:01:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:34] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:56] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:56] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:02:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:03:34] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:03:34] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:12] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:13] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:18] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:23] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:23] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:23] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:38] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:38] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:38] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:38] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:39] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:39] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:52] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:52] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:52] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:53] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:53] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:04:53] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:30] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:30] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:30] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:05:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:06:45] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:06:45] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:06:45] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:04] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:04] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:04] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:05] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:05] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:10] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:13] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:13] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:17] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:17] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:07:17] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:02] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:02] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:02] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:16] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:16] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:08:16] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:01] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:01] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:01] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:07] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:07] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:07] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:14] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:14] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:19] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:19] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:19] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:32] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:32] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:45] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:45] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:55] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:55] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:09:55] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:27] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:27] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:27] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:45] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:45] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:45] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:10:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:09] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:11] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:16] "[32mGET /callback?state=yKwa9xyNSEQ6i1SwkVGQuKtyU4Xmiv&code=4/0AeaYSHAYIeaNl_-r40BhtmC5j1NFe4m5pBYHyJELshuchvR5uTR9tg87x1pfZKDccn6qdg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:16] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:23] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:33] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:33] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:11:33] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:12:32] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:12:32] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 14:12:32] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:16] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:18] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:21] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:23] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:51] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:54] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:54] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:39:55] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:07] "[32mGET /callback?state=UlFxtmyGST2NNGrypNcGw89d6KECoh&code=4/0AeaYSHDgIkWG943FcyzHEluA6gSUO6m_CrPyLYU8Z5FmTTsebjn-FiWmc1_Xzew2LK4xdw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:07] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:07] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:23] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:34] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:34] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:34] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:44] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:44] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:40:44] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:53:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:53:53] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:53:55] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:01] "[32mGET /callback?state=zksqYccw024XftSfJRo8JsZpTe6xVy&code=4/0AeaYSHAHgW97Uf9zriAOInhGmaAwrJgN1750aGb3hFE7yd_m99bsix7MijrSONS1lP9DJw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:01] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:01] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:29] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:29] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:54] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:54] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:54:55] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:57:19] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 17:57:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:14] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:15] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:15] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:31] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:00:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:01:24] "GET /interview HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:01:24] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [14/Feb/2024 18:01:24] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:14] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:15] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:18] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:20] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:33] "[32mGET /callback?state=LU76vPhrzHxDT6HX43Fz7e3f0950H1&code=4/0AeaYSHBKcpG7nNEcZygY-shYX56OsTPhHN8462hHoXyjLkXrMlBrb-Thzx1_75rwt9NK-A&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:33] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:39] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:39] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:43] "[33mGET /interview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:47] "GET /interview/fronend HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:47] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:47] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:12:59] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:13:00] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:13:00] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:14:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:14:30] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:38] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:42] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:42] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:42] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:57] "GET /interview/nodejs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:57] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:20:57] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:21:39] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:21:39] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:21:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:21:49] "[33mGET /interview/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:25:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:26:51] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:26:51] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:26:51] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:35] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:35] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:35] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:43] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:43] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:27:43] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:28:05] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:28:05] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:28:05] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:30:44] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:30:44] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:01] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:01] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:02] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'login' route: (sqlite3.OperationalError) no such column: candidate.username
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('ss6928228@gmail.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:14] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:18] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:24] "[32mGET /callback?state=K0O0cc2zC4DqYmpn6j4kkWMVZi7YIO&code=4/0AeaYSHAuUtQVsfgUche1Tnca73-T2hlcNlD1FNd28_9Zs2hl0VxW7zAf_HgV3RMthQLAdQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+ERROR:root:Error in 'home' route: (sqlite3.OperationalError) no such column: candidate.username
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('102793900629085398499', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:24] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:36] "[32mGET /callback?state=K0O0cc2zC4DqYmpn6j4kkWMVZi7YIO&code=4/0AeaYSHCtZNwz05IB4hzakDc-U_H4bSQnqpzcAHaGwaF57NjeGtRlzk43abFMw70Ph_nbhw&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+ERROR:root:Error in 'home' route: (sqlite3.OperationalError) no such column: candidate.username
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('117717027933282845101', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:36] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:50] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:48:50] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:02] "[32mGET /callback?state=la5BAqWbJx3olz1mf4zAz1XiPxSkrw&code=4/0AeaYSHD9s5oyfYUjkjY9SVIZCLtoIsanINjlX94sF6AyYiXWwJwL8M-qUlsTRPPHn60l4w&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:02] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:05] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:49:05] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:53:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:53:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:53:43] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:53:50] "[32mGET /callback?state=tfZMpkp6syWIMtPjazkVExQZPR8ufn&code=4/0AeaYSHDP0pjkkwy0kwUFlmSxIuNVzKyhIOJ25bWY2Iv-15oOwxkcgx8pvdlsc5tMIPP_ow&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+ERROR:root:Error in 'home' route: (sqlite3.OperationalError) no such column: candidate.username
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('117717027933282845101', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 03:53:50] "[35m[1mGET / HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 04:04:01] "[32mGET /callback?state=tfZMpkp6syWIMtPjazkVExQZPR8ufn&code=4/0AeaYSHCNmJic_N7sEVbth8SRJVJLGJWWBf8HQr6GQ148yvHkNHQNqL-AjfiznZtPzwUj3g&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 04:04:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 04:04:02] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:00] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:01] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:02] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:04] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:11] "[32mGET /callback?state=KRnleAZptvi07Sh1GfO5xoO0ucRk0S&code=4/0AeaYSHCCrkX2AmNH4uUKyKmcRx59BQStMoeAAOlFd4-meSaHbL2KrXU15ZKnKcGl20Jppg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:19] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:24] "[33mGET /interview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:28] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:28] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:28] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'user_profile' route: user_profile.html
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:41:35] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+ERROR:root:Error in 'user_profile' route: user_profile.html
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:43:45] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+ERROR:root:Error in 'user_profile' route: user_profile.html
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:43:48] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:43:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:43:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:44:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:44:23] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.edit_profile' with values ['user_id']. Did you mean 'routes.verify' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:44:27] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:48:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:48:58] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:00] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:00] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:10] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:10] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:24] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:24] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:33] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:33] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:37] "[33mGET /interview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:39] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:39] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:39] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.edit_profile' with values ['user_id']. Did you mean 'routes.verify' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:49:45] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:50:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:50:57] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:50:58] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:50:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:50:58] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:00] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:09] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:09] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:51:13] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:53:35] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:53:40] "[32mGET /callback?state=Pe7pmTFmZqcrk0xzDMesmlyZ7ny0c4&code=4/0AeaYSHBe924UK3UyFP13ccrNbvtagAg14zed8tZQZSI6o_S_dxdGOtt168u1JFg_-NlLSQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:53:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:53:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.edit_profile' with values ['user_id']. Did you mean 'routes.verify' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:53:49] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.edit_profile' with values ['user_id']. Did you mean 'routes.verify' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:54:36] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:56:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:56:55] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.user_profile' with values ['user_id']. Did you mean 'routes.interview' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 14:56:58] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:01:37] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:01:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:01:45] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:01:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:36] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:36] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:36] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:39] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:43] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:47] "[32mGET /callback?state=tCpJGlmg4IzV3RZlKgnWZtp7cx1bfk&code=4/0AeaYSHD33oaNmzC2qLhVsnGXenpQw_18JIbyjdd_ziept6wkN8AqkGY6Id-Vk2bRryozeA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:47] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:53] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:03:53] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:22] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:22] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.user_profile' with values ['user_id']. Did you mean 'routes.interview' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:26] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.user_profile' with values ['user_id']. Did you mean 'routes./profile' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:38] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'profile' route: Could not build url for endpoint 'routes.user_profile' with values ['user_id']. Did you mean 'routes./profile' instead?
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:45] "[35m[1mGET /profile/1 HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:06:47] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:13] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:13] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:18] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:18] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:23] "[33mGET /login/profile/1 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:27] "[33mGET /login/ HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:32] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:35] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:35] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:41] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:41] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:49] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:07:53] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:31] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:32] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:34] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:35] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:39] "[32mGET /callback?state=aBslLDPSMufnbg1kzu0D5rvxbf3bra&code=4/0AeaYSHBgGLV3EUXdj2P3eyovXEZF-bJBXjKzNUXAwmFwX0YTXnEaGQB9p731EsoGbbulww&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:40] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:45] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:45] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:48] "[33mGET /interview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:56] "GET /interview/w HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:56] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:09:56] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:01] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:01] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:04] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:04] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:07] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:07] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:10:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:13:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:13:38] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:13:48] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:13:49] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:11] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:18] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:25] "[33mGET /interview HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:29] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:29] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:39] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:39] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:14:39] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:06] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:06] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:17] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:24] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:24] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:24] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:28] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:28] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:28] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:31] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:36] "[32mGET /callback?state=XDMjFyM4eXUNEgbWQns1zDKZNZOMNA&code=4/0AeaYSHB4_Ub2FPp8F69nzRf4ZieGwXIkAAP-RhjXR3S_d2zTWGTPnS3-R_2JyXCP9WpAtA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:36] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:42] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:42] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:44] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:15:44] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:05] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:05] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:20] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:20] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:30] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [15/Feb/2024 15:16:31] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -

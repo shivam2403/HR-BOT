@@ -1,11 +1,24 @@
 from flask_sqlalchemy import SQLAlchemy
+from sqlalchemy.orm import validates
 
 db = SQLAlchemy()
 
 class Candidate(db.Model):
     id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(100), unique=True, nullable=False)
+    username = db.Column(db.String(100), nullable=False)
+    email = db.Column(db.String(100), unique=True, nullable=False)
+    phone = db.Column(db.String(10), unique=True, nullable=False)
+    password = db.Column(db.String(60), nullable=False)
     responses = db.relationship('CandidateResponse', backref='candidate', lazy=True)
+    @validates('phone')
+    def validate_phone(self, key, value):
+        if not value.isdigit() or len(value) != 10:
+            raise ValueError("Phone number must be exactly 10 digits.")
+        return value
+
+    def __repr__(self):
+        return f"{self.id} - {self.username}"
+    
 
 class Question(db.Model):
     id = db.Column(db.Integer, primary_key=True)
