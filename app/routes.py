@@ -1,4 +1,4 @@
-from flask import Flask,Blueprint, jsonify, request, render_template,redirect,session,abort,url_for
+from flask import Flask,flash,Blueprint, jsonify, request, render_template,redirect,session,abort,url_for,send_file
 from models import db, Candidate, Question, HRInput, CandidateResponse
 import openai,json,re,os,pathlib,requests,google.auth.transport.requests
 from google_auth_oauthlib.flow import Flow
@@ -13,6 +13,8 @@ import base64,pyotp
 import secrets
 import logging
 import time
+from werkzeug.utils import secure_filename
+from flask import current_app
 
 # Setup logging configuration
 logging.basicConfig(filename='error.log', level=logging.ERROR)
@@ -378,17 +380,6 @@ def signup():
         logging.error(f"Error in 'signup' route: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred'}), 500
 
-# def login_is_required(function):
-#     try:
-#         def wrapper(*args, **kwargs):
-#             if "google_id" not in session:
-#                 return render_template('LoginRequired.html')
-#             else:
-#                 return function()
-#         return wrapper
-#     except Exception as e:
-#         logging.error(f"Error in 'login_is_required' function: {str(e)}")
-#         return jsonify({'error': 'An unexpected error occurred'}), 500
         
 def login_is_required(endpoint_name):
     def decorator(function):
@@ -397,7 +388,7 @@ def login_is_required(endpoint_name):
                 return render_template('LoginRequired.html')
             else:
                 return function(*args, **kwargs)
-        wrapper.__name__ = endpoint_name  # Set the endpoint name
+        wrapper.__name__ = endpoint_name
         return wrapper
     return decorator
 
@@ -452,9 +443,18 @@ def callback():
             clock_skew_in_seconds=10
         )
 
-        session["google_id"] = id_info.get("sub")
+        session["google_id"] = id_info.get("email")
         session["name"] = id_info.get("name")
-        session["email"] = id_info.get("email") 
+        session["email"] = id_info.get("email")
+
+        local_user = Candidate.query.filter_by(email=session["email"]).first()
+
+        if not local_user:
+            # If the local user doesn't exist, create a new one using the Google user ID
+            local_user = Candidate(email=id_info.get("email"), username=id_info.get("name"), password="google_signup_placeholder")
+            db.session.add(local_user)
+            db.session.commit()
+
         return redirect("/")
     except Exception as e:
         logging.error(f"Error in 'callback' route: {str(e)}")
@@ -491,38 +491,220 @@ def result():
 @routes_blueprint.route('/interview/<job_role>')
 def interview(job_role):
     try:
+        email = session.get('google_id')
+        user = Candidate.query.filter_by(email=email).first()
         questions = Question.query.filter_by(job_role=job_role).all()
 
         if questions:
-            return render_template('interview.html', questions=questions)
+            return render_template('interview.html', questions=questions, user=user)
         else:
-            return render_template('interview.html', questions=None, message='No questions available for this job role')
+            return render_template('interview.html', questions=None, message='No questions available for this job role',user=user)
     except Exception as e:
         logging.error(f"Error in 'interview' route: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred'}), 500
     
-
 
 @routes_blueprint.route('/profile/<int:user_id>', methods=['GET', 'POST'])
 def user_profile(user_id):
     try:
         if "google_id" not in session:
             return render_template('LoginRequired.html')
-        else:
-            user = Candidate.query.get(user_id)
 
-            if request.method == 'POST':
-                # Handle form submissions to update user profile
-                user.resume_path = request.form.get('resume_path')
-                user.skillset = request.form.getlist('skillset')  # Use getlist for arrays
-                user.linkedin_url = request.form.get('linkedin_url')
-                user.github_link = request.form.get('github_link')
-                user.other_links = request.form.get('other_links')
+        email = session.get('google_id')
+        user = Candidate.query.filter_by(email=email).first()
 
-                db.session.commit()
-                return redirect(url_for('routes.user_profile', user_id=user.id))
+        if user.id != user_id:
+            return render_template('not_found.html')
 
-            return render_template('profile.html', user=user)
+        if request.method == 'POST':
+            # Handle form submissions to update user profile
+            new_resume_path = request.form.get('resume_path')
+
+            if 'resume' in request.files:
+                resume_file = request.files['resume']
+
+                if resume_file and allowed_file(resume_file.filename):
+                    # Save the uploaded resume file to a specific folder
+                    upload_folder = 'uploads'
+                    os.makedirs(upload_folder, exist_ok=True)
+
+                    resume_filename = secure_filename(resume_file.filename)
+                    new_resume_path = os.path.join(upload_folder, resume_filename)
+                    resume_file.save(new_resume_path)
+
+            # Update the user's resume_path in the database if a new resume is uploaded
+            if new_resume_path:
+                user.resume_path = new_resume_path
+
+            user.skillset = request.form.get('skillset')
+            user.linkedin_url = request.form.get('linkedin_url')
+            user.github_link = request.form.get('github_link')
+            user.twitter_link = request.form.get('twitter_link')
+            user.portfolio_link = request.form.get('portfolio_link')
+
+            db.session.commit()
+
+            # Retrieve the file input value from the session
+            sessionStorage_key = f'resumeInputValue_{user.id}'
+            resume_input_value = session.pop(sessionStorage_key, None)
+
+            return render_template('profile.html', user=user, resume_input_value=resume_input_value)
+
+        return render_template('profile.html', user=user)
     except Exception as e:
         logging.error(f"Error in 'profile' route: {str(e)}")
         return jsonify({'error': 'An unexpected error occurred'}), 500
+
+    
+
+
+ALLOWED_EXTENSIONS = {'pdf'}
+def allowed_file(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+
+@routes_blueprint.route('/upload_resume/<int:user_id>', methods=['POST'])
+def upload_resume(user_id):
+    try:
+        if "google_id" not in session:
+            return render_template('LoginRequired.html')
+
+        user = Candidate.query.get(user_id)
+
+        if not user:
+            return jsonify({'error': 'User not found'}), 404
+
+        if 'resume' in request.files:
+            resume_file = request.files['resume']
+
+            if resume_file.filename == '':
+                return jsonify({'error': 'No selected file'}), 400
+
+            if resume_file and allowed_file(resume_file.filename):
+                # Save the uploaded resume file to a specific folder (create the folder if not exists)
+                upload_folder = 'uploads'
+                os.makedirs(upload_folder, exist_ok=True)
+
+                resume_filename = secure_filename(resume_file.filename)
+                resume_path = os.path.join(upload_folder, resume_filename)
+                resume_file.save(resume_path)
+
+                # Update the user's resume_path in the database
+                user.resume_path = resume_path
+                db.session.commit()
+
+                # Store the file input value in the session for persistence
+                sessionStorage_key = f'resumeInputValue_{user.id}'
+                session[sessionStorage_key] = request.form.get('resumeInput')
+
+                # Use flash to display a message after redirection
+                flash('Resume uploaded successfully!', 'success')
+
+                return redirect(url_for('routes.user_profile', user_id=user.id))
+            else:
+                return jsonify({'error': 'Invalid file format. Please upload a PDF file'}), 400
+        else:
+            return jsonify({'error': 'No file part in the request'}), 400
+    except Exception as e:
+        logging.error(f"Error in 'upload_resume' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
+    
+
+
+@routes_blueprint.route('/resumes/<filename>', methods=['GET'])
+def get_resume(filename):
+    try:
+        # Use send_file to serve the resume file
+        return send_file(filename, as_attachment=True)
+    except Exception as e:
+        logging.error(f"Error in 'get_resume' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
+    
+
+@routes_blueprint.route('/remove_resume/<int:user_id>', methods=['POST'])
+def remove_resume(user_id):
+    try:
+        if "google_id" not in session:
+            return render_template('LoginRequired.html')
+
+        user = Candidate.query.get(user_id)
+
+        if not user:
+            return jsonify({'error': 'User not found'}), 404
+
+        # Check if the user has a resume to remove
+        if user.resume_path:
+            # Remove the resume file from the server
+            os.remove(user.resume_path)
+
+            # Update the user's resume_path in the database
+            user.resume_path = None
+            db.session.commit()
+
+            flash('Resume removed successfully!', 'success')
+            return jsonify({'message': 'Resume removed successfully'}), 200
+        else:
+            return jsonify({'error': 'No resume to remove'}), 400
+    except Exception as e:
+        logging.error(f"Error in 'remove_resume' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
+
+
+
+# Add the following function to check if the file is a valid profile picture format
+def allowed_profile_picture(filename):
+    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg', 'gif'}
+
+@routes_blueprint.route('/upload_profile_picture/<int:user_id>', methods=['POST'])
+def upload_profile_picture(user_id):
+    try:
+        if "google_id" not in session:
+            return render_template('LoginRequired.html')
+
+        user = Candidate.query.get(user_id)
+
+        if not user:
+            return jsonify({'error': 'User not found'}), 404
+
+        if 'profile_picture' in request.files:
+            profile_picture_file = request.files['profile_picture']
+
+            if profile_picture_file.filename == '':
+                return jsonify({'error': 'No selected file'}), 400
+
+            if profile_picture_file and allowed_profile_picture(profile_picture_file.filename):
+                # Save the uploaded profile picture file to the assets folder within static
+                upload_folder = os.path.join(current_app.static_folder, 'assets', 'profile_pics')
+                os.makedirs(upload_folder, exist_ok=True)
+
+                profile_picture_filename = secure_filename(profile_picture_file.filename)
+                profile_picture_path = os.path.join(upload_folder, profile_picture_filename)
+                profile_picture_path = profile_picture_path.replace('\\', '/')
+                profile_picture_file.save(profile_picture_path)
+
+                # Update the user's profile_picture in the database
+                # Set the relative path instead of the absolute path
+                relative_path = os.path.relpath(profile_picture_path, current_app.static_folder)
+                user.profile_picture_filename = relative_path
+
+                db.session.commit()
+
+                flash('Profile picture uploaded successfully!', 'success')
+
+                # Redirect to the user's profile page
+                return redirect(url_for('routes.user_profile', user_id=user.id))
+            else:
+                return jsonify({'error': 'Invalid file format. Please upload a valid image file'}), 400
+        else:
+            return jsonify({'error': 'No file part in the request'}), 400
+    except Exception as e:
+        logging.error(f"Error in 'upload_profile_picture' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
+
+
+@routes_blueprint.route('/remove_profile_image')
+def remove_profile_image():
+    email = session.get('google_id')
+    user = Candidate.query.filter_by(email=email).first()
+    user.profile_picture_filename = None
+
+    return render_template('profile.html',user=user)

@@ -1,15 +1,25 @@
 from flask_sqlalchemy import SQLAlchemy
 from sqlalchemy.orm import validates
+from sqlalchemy.dialects.postgresql import ARRAY
 
 db = SQLAlchemy()
 
 class Candidate(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(100), nullable=False)
-    email = db.Column(db.String(100), unique=True, nullable=False)
-    phone = db.Column(db.String(10), unique=True, nullable=False)
+    email = db.Column(db.String(100),unique=True, nullable=False)
+    phone = db.Column(db.String(10), unique=True)
     password = db.Column(db.String(60), nullable=False)
+    google_user_id = db.Column(db.String(255), unique=True)
     responses = db.relationship('CandidateResponse', backref='candidate', lazy=True)
+    resume_path = db.Column(db.String(255))
+    skillset = db.Column(db.String(255))
+    linkedin_url = db.Column(db.String(255))
+    github_link = db.Column(db.String(255))
+    twitter_link = db.Column(db.String(255))
+    portfolio_link = db.Column(db.String(255))
+    profile_picture_filename = db.Column(db.String(255))
+
     @validates('phone')
     def validate_phone(self, key, value):
         if not value.isdigit() or len(value) != 10:

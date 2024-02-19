@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>HR bot - Interview</title>
     <link rel="stylesheet" href="../static/css/interview.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
@@ -13,9 +13,16 @@
 <body>
     <div class="interview">
         <div class="nav">
-            <h1 style="font-size: 40px;">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></h1>
-            <a href="/google_logout"><button class="btn">Logout</button></a>
-      </div>
+            <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+            <div style="display: flex; align-items: center; gap: 20px;">
+              <a href="/google_logout"><button class="btn">Logout</button></a>
+              <a href="/profile/{{ user.id }}">{% if user.profile_picture_filename|length > 10 %}
+                <img class="nav_img" src="../static/{{ user.profile_picture_filename }}" alt="">
+            {% else %}
+                <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+            {% endif %}</a>
+            </div>
+          </div>
 
       <div class="questions-container">
         <h2>Interview Questions</h2>

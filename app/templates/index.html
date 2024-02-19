@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Candidate Interview</title>
+    <title>HR bot - Home</title>
     <link rel="stylesheet" href="../static/css/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
@@ -12,8 +12,18 @@
   <body>
     <div class="dashboard">
       <div class="nav">
-        <h1 style="font-size: 40px;">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></h1>
+        <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+        <div style="display: flex; align-items: center; gap: 20px;">
           <a href="/google_logout"><button class="btn">Logout</button></a>
+          <a href="/profile/{{ user.id }}">
+            {% if user.profile_picture_filename and user.profile_picture_filename|length > 10 %}
+                <img class="nav_img" src="../static/{{ user.profile_picture_filename }}" alt="">
+            {% else %}
+                <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+            {% endif %}
+          
+          </a>
+        </div>
       </div>
       <div class="d_title">
         <h1>Candidate <span style="color: #2bbe60;">Interview</span></h1>
@@ -21,19 +31,14 @@
       <div class="user_info">
         {% if user %}
           <h2 style="font-size: 50px;"><span style="font-weight: bold;">Hello,</span> {{ user.username }}</h2>
-          <!-- <div><span style="font-weight: bold;">Email:</span> {{ user.email }}</div>
-          <div><span style="font-weight: bold;">Phone no:</span> {{ user.phone }}</div> -->
         {% elif google_name %}
           <h2 style="font-size: 50px;"><span style="font-weight: bold;">Hello,</span> {{ google_name }}</h2>
-          <!-- <div><span style="font-weight: bold;">Email:</span> {{ google_email }}</div>
-          <div><span style="font-weight: bold;">Phone no:</span> Not Available</div> -->
         {% endif %}
         </div>
 
         <div class="role">
             <span style="font-weight: bold;">Enter your applied job role here</span>
             <div class="role_input_wrap">
-                <!-- <label style="font-weight: bold;" for="appliedJobRole"></label> -->
                 <input
                 class="role_input"
                 type="text"
@@ -47,7 +52,6 @@
         <div class="d_question_showcase">
             <h2 style="font-size: 60px;">Question Showcase</h2>
             <div id="questionContainer">
-                <!-- <p id="question"></p> -->
                 <textarea id="response" placeholder="Your response..."></textarea>
                 <button class="btn" id="nextQuestion">Next Question</button>
             </div>
