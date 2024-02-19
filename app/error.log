@@ -1363,3 +1363,75 @@ INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:30:06] "[36mGET /static/assets/prof
 INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:30:09] "[32mGET /google_logout HTTP/1.1[0m" 302 -
 INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:30:09] "GET /login HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:30:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:39] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:39] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:44] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:44] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:48] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:49] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:55] "[32mGET /callback?state=V5d2sYiFWLAVgcXRdiYyL4OLi6Us8n&code=4/0AeaYSHDT-iKOkcb7J5ynlrvZhdzfDVGB6Qwa1k55aBxCmRrlrao5hMpO2wSLZfpRidqtWQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:55] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:55] "[36mGET /static/assets/profile_pics/mqdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:57] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:57] "[36mGET /static/assets/profile_pics/mqdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:50:57] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:11] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:11] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:11] "[36mGET /static/assets/profile_pics/mqdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:12] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:12] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:12] "[36mGET /static/assets/profile_pics/mqdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:13] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:13] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:51:13] "[36mGET /static/assets/profile_pics/mqdefault.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:08] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:08] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:08] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:11] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:12] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:13] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:19] "[32mGET /callback?state=3DwuwPF3ThnKWSbj8Wly62Y6oifE23&code=4/0AeaYSHD7KV7l9v4xCemAzWKGBfukyLIQyMB31IRmJL7EW82n7x42hDhZ992ivPkvhtvmNQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:20] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:20] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:22] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:23] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:23] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:29] "[32mPOST /upload_profile_picture/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:29] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:29] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:31] "GET /static/assets/profile_pics/skill.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:38] "[32mPOST /upload_profile_picture/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:38] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:38] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:39] "GET /static/assets/profile_pics/590933.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:56] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:56] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:53:56] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:54:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:54:53] "GET /static/css/error.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:54:57] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:20] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:21] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:24] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:24] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:26] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:31] "[32mGET /callback?state=fv3MgCJCuIHlxWLcxzK5nx3ZkehxGO&code=4/0AeaYSHCn7lRpJcG7WcvtVzHh8dMtHenXUmtiGRNAl9KxS8V2luMvALmgEpV9vH_P7FZApA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:32] "GET /static/assets/profile_pics/590933.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:32] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:34] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:34] "GET /static/css/profile.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [19/Feb/2024 14:56:34] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
