@@ -706,5 +706,83 @@ def remove_profile_image():
     email = session.get('google_id')
     user = Candidate.query.filter_by(email=email).first()
     user.profile_picture_filename = None
+    db.session.commit()
 
     return render_template('profile.html',user=user)
+
+
+@routes_blueprint.route('/forgot_password')
+def forgot_password():
+    return render_template('email.html')
+
+
+@routes_blueprint.route('/getotp', methods=['POST'])
+def get_otp():
+    error_message=None
+    email = request.form.get('email')
+    user = Candidate.query.filter_by(email=email).first()
+
+    if user is None:
+        error_message="User not found! Please try again."
+        return render_template('email.html',error_message=error_message)
+
+    secret_key=generate_secret_key()
+    otp, generated_time = generate_otp(secret_key)
+    send_otp_email(email, otp)
+    session["temp_user_email"] = email
+    session["temp_user_otp"] = otp
+    session["temp_generated_time"] = generated_time
+    session["temp_secret_key"] = secret_key
+
+    return render_template('verify_otp_for_forgot_password.html',)
+
+
+@routes_blueprint.route('/verify_otp_for_updating_password', methods=['POST'])
+def verify_otp_for_updating_password():
+    try:
+        user_otp = request.form.get('otp')
+        stored_email = session.get("temp_user_email")
+        stored_otp = session.get("temp_user_otp")
+        secret_key=session.get('temp_secret_key')
+        generated_time=session.get('temp_generated_time')
+        
+        
+        if validate_totp(stored_otp, secret_key, generated_time) and int(stored_otp)==int(user_otp):
+            # session.pop("temp_user_email", None)
+            session.pop("temp_user_otp", None)
+            return render_template('update_password.html')
+        else:
+            logging.error("OTP Verification Failed")
+            return render_template('Error.html')
+    except Exception as e:
+        logging.error(f"Exception during OTP verification: {str(e)}")
+        return render_template('Error.html')
+    
+
+@routes_blueprint.route('/update_password', methods=['GET', 'POST'])
+def update_password():
+    error_message = None
+
+    if request.method == 'POST':
+        password = request.form.get('password')
+        re_password = request.form.get('re-password')
+
+        # Check if passwords match
+        if password == re_password:
+            # Hash the password
+            hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+
+            # Update the user's password in the database
+            email = session.get("temp_user_email")
+            session.pop("temp_user_email", None)
+            user = Candidate.query.filter_by(email=email).first()
+            user.password = hashed_password
+            db.session.commit()
+
+            return redirect('/login')
+        else:
+            error_message = "Passwords do not match. Please try again."
+            session['error_message_shown'] = True
+
+    # Render the password update form with the error message
+    return render_template('update_password.html', error_message=error_message)
