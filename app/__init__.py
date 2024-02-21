@@ -1,8 +1,10 @@
 from flask import Flask
-from models import db
+# from models import db // when working in app directory
+from app.models import db
 from dotenv import load_dotenv
 import os,openai
-from routes import routes_blueprint
+# from routes import routes_blueprint // when working in app directory
+from app.routes import routes_blueprint
 from flask_mail import *
 from random import *
 

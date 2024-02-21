@@ -1,5 +1,6 @@
 from flask import Flask,flash,Blueprint, jsonify, request, render_template,redirect,session,abort,url_for,send_file
-from models import db, Candidate, Question, HRInput, CandidateResponse
+# from models import db, Candidate, Question, HRInput, CandidateResponse // when working in app directory
+from app.models import db, Candidate, Question, HRInput, CandidateResponse
 import openai,json,re,os,pathlib,requests,google.auth.transport.requests
 from google_auth_oauthlib.flow import Flow
 from pip._vendor import cachecontrol
@@ -9,8 +10,7 @@ from dotenv import load_dotenv
 from flask_mail import *
 from random import *
 from pyotp import TOTP
-import base64,pyotp
-import secrets
+import pyotp
 import logging
 import time
 from werkzeug.utils import secure_filename
@@ -40,7 +40,8 @@ client_secrets_file=os.path.join(pathlib.Path(__file__).parent, 'client_secret.j
 flow = Flow.from_client_secrets_file(
     client_secrets_file=client_secrets_file,
     scopes=["https://www.googleapis.com/auth/userinfo.profile", "https://www.googleapis.com/auth/userinfo.email", "openid"],
-    redirect_uri="http://127.0.0.1:8000/callback"
+    # redirect_uri="http://127.0.0.1:8000/callback" // when working in app directory but now we need to change redirect_uri in our google app also so when working in app directory make redirect_uri as "http://127.0.0.1:8000/callback"
+    redirect_uri="http://localhost:5000/callback"
     )
 
 routes_blueprint = Blueprint('routes', __name__)
@@ -367,6 +368,9 @@ def signup():
             password=request.form.get('password')
             phone=request.form.get('phone')
 
+            if len(password)<8 or not any(char.isdigit() for char in password) or not any(char.isalpha() for char in password):
+                return render_template('invalid_password.html')
+
             hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
             user=Candidate(username=username, phone=phone, email=email, password=hashed_password)
@@ -560,7 +564,11 @@ def user_profile(user_id):
 
 ALLOWED_EXTENSIONS = {'pdf'}
 def allowed_file(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    try:
+        return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
+    except Exception as e:
+        logging.error(f"Error in 'allowed_file' function: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
 
 @routes_blueprint.route('/upload_resume/<int:user_id>', methods=['POST'])
 def upload_resume(user_id):
@@ -652,7 +660,11 @@ def remove_resume(user_id):
 
 # Add the following function to check if the file is a valid profile picture format
 def allowed_profile_picture(filename):
-    return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg', 'gif'}
+    try:
+        return '.' in filename and filename.rsplit('.', 1)[1].lower() in {'png', 'jpg', 'jpeg', 'gif'}
+    except Exception as e:
+        logging.error(f"Error in 'allowed_profile_picture' function: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
 
 @routes_blueprint.route('/upload_profile_picture/<int:user_id>', methods=['POST'])
 def upload_profile_picture(user_id):
@@ -703,38 +715,50 @@ def upload_profile_picture(user_id):
 
 @routes_blueprint.route('/remove_profile_image')
 def remove_profile_image():
-    email = session.get('google_id')
-    user = Candidate.query.filter_by(email=email).first()
-    user.profile_picture_filename = None
-    db.session.commit()
+    try:
+        email = session.get('google_id')
+        user = Candidate.query.filter_by(email=email).first()
+        user.profile_picture_filename = None
+        db.session.commit()
 
-    return render_template('profile.html',user=user)
+        return render_template('profile.html',user=user)
+    except Exception as e:
+        logging.error(f"Error in 'remove_profile_image' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
 
 
 @routes_blueprint.route('/forgot_password')
 def forgot_password():
-    return render_template('email.html')
+    try:
+        return render_template('email.html')
+    except Exception as e:
+        logging.error(f"Error in 'forgot_password' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500        
 
 
 @routes_blueprint.route('/getotp', methods=['POST'])
 def get_otp():
-    error_message=None
-    email = request.form.get('email')
-    user = Candidate.query.filter_by(email=email).first()
+    try:
+        error_message=None
+        email = request.form.get('email')
+        user = Candidate.query.filter_by(email=email).first()
 
-    if user is None:
-        error_message="User not found! Please try again."
-        return render_template('email.html',error_message=error_message)
+        if user is None:
+            error_message="User not found! Please try again."
+            return render_template('email.html',error_message=error_message)
 
-    secret_key=generate_secret_key()
-    otp, generated_time = generate_otp(secret_key)
-    send_otp_email(email, otp)
-    session["temp_user_email"] = email
-    session["temp_user_otp"] = otp
-    session["temp_generated_time"] = generated_time
-    session["temp_secret_key"] = secret_key
+        secret_key=generate_secret_key()
+        otp, generated_time = generate_otp(secret_key)
+        send_otp_email(email, otp)
+        session["temp_user_email"] = email
+        session["temp_user_otp"] = otp
+        session["temp_generated_time"] = generated_time
+        session["temp_secret_key"] = secret_key
 
-    return render_template('verify_otp_for_forgot_password.html',)
+        return render_template('verify_otp_for_forgot_password.html',)
+    except Exception as e:
+        logging.error(f"Error in 'get_otp' route: {str(e)}")
+        return jsonify({'error': 'An unexpected error occurred'}), 500
 
 
 @routes_blueprint.route('/verify_otp_for_updating_password', methods=['POST'])
@@ -761,28 +785,35 @@ def verify_otp_for_updating_password():
 
 @routes_blueprint.route('/update_password', methods=['GET', 'POST'])
 def update_password():
-    error_message = None
+    try:
+        error_message = None
 
-    if request.method == 'POST':
-        password = request.form.get('password')
-        re_password = request.form.get('re-password')
+        if request.method == 'POST':
+            password = request.form.get('password')
+            re_password = request.form.get('re-password')
 
-        # Check if passwords match
-        if password == re_password:
-            # Hash the password
-            hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
+            # Check if passwords match
+            if password == re_password:
+                if len(password)<8 or not any(char.isdigit() for char in password) or not any(char.isalpha() for char in password):
+                    return render_template('update_password.html', error_message="Please enter a valid password.")
 
-            # Update the user's password in the database
-            email = session.get("temp_user_email")
-            session.pop("temp_user_email", None)
-            user = Candidate.query.filter_by(email=email).first()
-            user.password = hashed_password
-            db.session.commit()
+                # Hash the password
+                hashed_password = bcrypt.generate_password_hash(password).decode('utf-8')
 
-            return redirect('/login')
-        else:
-            error_message = "Passwords do not match. Please try again."
-            session['error_message_shown'] = True
+                # Update the user's password in the database
+                email = session.get("temp_user_email")
+                session.pop("temp_user_email", None)
+                user = Candidate.query.filter_by(email=email).first()
+                user.password = hashed_password
+                db.session.commit()
 
-    # Render the password update form with the error message
-    return render_template('update_password.html', error_message=error_message)
+                return redirect('/login')
+            else:
+                error_message = "Passwords do not match. Please try again."
+                session['error_message_shown'] = True
+
+        # Render the password update form with the error message
+        return render_template('update_password.html', error_message=error_message)
+    except Exception as e:
+        logging.error(f"Exception in 'update_password' route: {str(e)}")
+        return render_template('Error.html')

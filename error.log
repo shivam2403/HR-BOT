@@ -1,0 +1,490 @@
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:28] "GET /static/css/error.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:29] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:32] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:32] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:34] "[32mGET /google_login HTTP/1.1[0m" 302 -
+ERROR:root:Error in 'login' route: (sqlite3.OperationalError) no such table: candidate
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password, candidate.google_user_id AS candidate_google_user_id, candidate.resume_path AS candidate_resume_path, candidate.skillset AS candidate_skillset, candidate.linkedin_url AS candidate_linkedin_url, candidate.github_link AS candidate_github_link, candidate.twitter_link AS candidate_twitter_link, candidate.portfolio_link AS candidate_portfolio_link, candidate.profile_picture_filename AS candidate_profile_picture_filename 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('sp4227944@gmail.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:47:56] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:48:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:48:22] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:48:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:48:23] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:48:25] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:52:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:52:00] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:52:02] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:52:02] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:52:04] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\run.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8000
+ * Running on http://192.168.1.3:8000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:56:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:56:21] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:56:22] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+ERROR:root:Error in 'login' route: (sqlite3.OperationalError) no such table: candidate
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password, candidate.google_user_id AS candidate_google_user_id, candidate.resume_path AS candidate_resume_path, candidate.skillset AS candidate_skillset, candidate.linkedin_url AS candidate_linkedin_url, candidate.github_link AS candidate_github_link, candidate.twitter_link AS candidate_twitter_link, candidate.portfolio_link AS candidate_portfolio_link, candidate.profile_picture_filename AS candidate_profile_picture_filename 
+FROM candidate 
+WHERE candidate.email = ?
+ LIMIT ? OFFSET ?]
+[parameters: ('sp4227944@gmail.com', 1, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:56:30] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:13] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:13] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:15] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:15] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'signup' route: (sqlite3.OperationalError) no such table: candidate
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password, candidate.google_user_id AS candidate_google_user_id, candidate.resume_path AS candidate_resume_path, candidate.skillset AS candidate_skillset, candidate.linkedin_url AS candidate_linkedin_url, candidate.github_link AS candidate_github_link, candidate.twitter_link AS candidate_twitter_link, candidate.portfolio_link AS candidate_portfolio_link, candidate.profile_picture_filename AS candidate_profile_picture_filename 
+FROM candidate]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:17] "[35m[1mGET /signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:33] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:34] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:35] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:36] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'signup' route: (sqlite3.OperationalError) no such table: candidate
+[SQL: SELECT candidate.id AS candidate_id, candidate.username AS candidate_username, candidate.email AS candidate_email, candidate.phone AS candidate_phone, candidate.password AS candidate_password, candidate.google_user_id AS candidate_google_user_id, candidate.resume_path AS candidate_resume_path, candidate.skillset AS candidate_skillset, candidate.linkedin_url AS candidate_linkedin_url, candidate.github_link AS candidate_github_link, candidate.twitter_link AS candidate_twitter_link, candidate.portfolio_link AS candidate_portfolio_link, candidate.profile_picture_filename AS candidate_profile_picture_filename 
+FROM candidate]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:59:42] "[35m[1mGET /signup HTTP/1.1[0m" 500 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:03] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:05] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:06] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:06] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:11] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:12] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:45] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:45] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:49] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:49] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:56] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:02:57] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:00] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:00] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:03] "GET /forgot_password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:03] "GET /static/css/email.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:07] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:07] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:12] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:12] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:34] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:34] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:34] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:46] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:03:46] "GET /static/css/verify.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:14] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:15] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:17] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:18] "GET /static/css/profile.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:22] "[32mPOST /upload_profile_picture/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:22] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:23] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:23] "GET /static/assets/profile_pics/590933.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:26] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:27] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:27] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:28] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:28] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:29] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:30] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:30] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:32] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:32] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:32] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:37] "[32mPOST /upload_resume/1 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:38] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:38] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:38] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:42] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:42] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:48] "GET /forgot_password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:48] "[36mGET /static/css/email.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:59] "POST /getotp HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:04:59] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:11] "POST /verify_otp_for_updating_password HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:11] "GET /static/css/update_password.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:22] "[32mPOST /update_password HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:22] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:22] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:34] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:35] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:46] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:46] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:46] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:46] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:48] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:48] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:48] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:55] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:55] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:05:57] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:06:01] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:29] "GET /signup HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:30] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:47] "[32mPOST /signup HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:47] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:47] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:58] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:07:59] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:05] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:05] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:07] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:08] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:13] "[32mPOST /upload_profile_picture/2 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:14] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:14] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:14] "GET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:18] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:18] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:36] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:50] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:50] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:56] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:56] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:08:56] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:02] "GET /interview/sjks HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:02] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:02] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:02] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:05] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:05] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:05] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:08] "[33mGET /re HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:12] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:12] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:12] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:15] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:15] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:15] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:18] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:18] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:21] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:21] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:21] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:27] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:27] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:09:27] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:11:51] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:14:20] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:14:20] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\__init__.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:16:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:16:09] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:16:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:16:10] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:16:12] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:19:17] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:19:17] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:19:20] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:20:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:20:19] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:20:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:20:21] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:20:22] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:18] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:28] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:29] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:31] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:21:32] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:25:03] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:36] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:36] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:40] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:48] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:50] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:26:50] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:10] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:10] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:18] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:18] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:20] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:25] "[32mGET /callback?state=uBtuFuj8tYzQEgPXBawlGyKS9bvYlQ&code=4/0AeaYSHBV66dVrb7AVJ3taxuO_1GRi_Y39AxjfBVcArgtx_j_mjzB8nWeSPo1IzbkYb-J4g&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:25] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:25] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:25] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:29] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:29] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:29] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:34] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:34] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:34] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:36] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:41] "[32mGET /callback?state=zEBWnCeMVVqT2p70RBfMb0XNgI4eLJ&code=4/0AeaYSHCfnM6nU4b6jUN-oRzG8Cze_pUyrk-UZo3nn0uNYdB1scr1SOOLBaoFDwzRcoxR8w&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:41] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:42] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:43] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:43] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:48] "[32mPOST /upload_profile_picture/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:49] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:49] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:49] "GET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:50] "GET /remove_profile_image HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:50] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:53] "[32mPOST /upload_profile_picture/3 HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:53] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:53] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:53] "GET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:57] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:57] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:28:57] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:30] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:30] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:32] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:45] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:49] "[32mGET /callback?state=PKVZCQxwJ5UGCjYxvKebHMhXbL2slw&code=4/0AeaYSHCRHfvjazazYuUwDK43wjHBVcKiNm0iL4uU92--rovCk1CI3WRtFHUCiPXhgal9kg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:50] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:50] "[36mGET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:51] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:52] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:52] "[36mGET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:53] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:29:53] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:19] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:19] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:20] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:28] "POST /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:28] "[36mGET /static/css/verify.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:37] "[32mPOST /verify HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:38] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:39] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:39] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:39] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:42] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:30:43] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:09] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:09] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:11] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:11] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:15] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:37] "[32mGET /callback?state=LM4aJbjLJM5fRia6Moh3UJg7rt5oOZ&code=4/0AeaYSHCwi8Hab4ytQ0062v6OL7V47gbH1f_9gJUNE3A-ay6oltFl5Zxbbq5CjHb1rI6eVg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:38] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:38] "[36mGET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:40] "GET /profile/3 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:40] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:40] "[36mGET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:43] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:43] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:37:51] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:11] "[32mGET /callback?state=S3QiJunL4A5lgfqd7Qtc9MJOwMxnfy&code=4/0AeaYSHBkbucR8x-Dj_NGJS2eohv27ijxmeeHhj42MyarN8Kb2sRpP932BGzEQJZ9J_75Wg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=1&hd=iiitvadodara.ac.in&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:11] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:12] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:13] "GET /profile/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:14] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:16] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:38:16] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:13] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:13] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:15] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:19] "[32mGET /callback?state=tiKkOe7nhAgAwg17TzlQkYGq3avEr0&code=4/0AeaYSHDOfass3RN9AOSFpwcsxX4sftndR8-FKZAgGG9vbR4v2Lc3qDHBng6uMB7KjhmP1g&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=3&hd=funnelhq.co&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:19] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:19] "[36mGET /static/assets/profile_pics/c7ebfcd8-f6d6-4af7-8224-343710acc188.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:21] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:22] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:23] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:27] "[32mGET /callback?state=9A5giaPH24JcmWfhJ7wBU6iqWzyIuA&code=4/0AeaYSHAlMwisVqp1nUm3Honak9G7cYAVTvs81jiru6Df_2gOh7znKOG0QKKDGtkjiMEghg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:28] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:29] "GET /profile/2 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:30] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:30] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:31] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:31] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:31] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:33] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:37] "[32mGET /callback?state=MCQhlbahPFABawwEZYUAzt76Seu372&code=4/0AeaYSHBjHmRDbpCZXqGY25NmXwxKHVzxqpBSuw_Fw7xsmGyE5nWGa2QEnkCVtspHB5ULSg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=1&hd=iiitvadodara.ac.in&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:37] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:37] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:41] "GET /profile/4 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:41] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:43] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Feb/2024 00:41:43] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
