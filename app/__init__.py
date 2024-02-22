@@ -14,7 +14,7 @@ def create_app():
     mail=Mail(app)
 
     load_dotenv()
-    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///HRBOT_DATABASE.db"
+    app.config['SQLALCHEMY_DATABASE_URI'] = "sqlite:///HRBOT_DB.db"
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     openai.api_key = os.environ['OPENAI_API_KEY']
     app.secret_key = os.environ.get('SECRET_KEY')

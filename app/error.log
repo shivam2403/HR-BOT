@@ -2867,6 +2867,3 @@ INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:49:56] "[36mGET /static/assets/prof
 INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:49:58] "GET /profile/1 HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:49:58] "[36mGET /static/assets/profile_pics/590933.jpg HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:49:58] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
-INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:50:01] "[32mGET /google_logout HTTP/1.1[0m" 302 -
-INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:50:01] "GET /login HTTP/1.1" 200 -
-INFO:werkzeug:127.0.0.1 - - [21/Feb/2024 23:50:01] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -

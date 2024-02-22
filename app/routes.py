@@ -454,10 +454,7 @@ def callback():
         local_user = Candidate.query.filter_by(email=session["email"]).first()
 
         if not local_user:
-            # If the local user doesn't exist, create a new one using the Google user ID
-            local_user = Candidate(email=id_info.get("email"), username=id_info.get("name"), password="google_signup_placeholder")
-            db.session.add(local_user)
-            db.session.commit()
+            return 'User not found'
 
         return redirect("/")
     except Exception as e:
