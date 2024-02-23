@@ -88,7 +88,7 @@ def send_emails(emails):
             message = Message(
                 subject='HR Round Results',
                 body='Congratulations! You are Selected for the HR Round.',
-                sender='rahul.sehgal049@gmail.com',
+                sender='dev@funnelhq.co',
                 recipients=[recipient_email]
             )
 
