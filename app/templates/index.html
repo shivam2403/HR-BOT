@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Candidate Interview</title>
 </head>
+
 <body>
+
+    {% if current_user.is_authenticated %}
+    <p>Welcome, {{ current_user.username }}! <a href="{{ url_for('routes.logout') }}">Logout</a></p>
     <h1>Candidate Interview</h1>
-    <label for="candidateName">Your Name:</label>
-    <input type="text" id="candidateName" placeholder="Enter your name...">
-    <br><br>
-    <label for="appliedJobRole">Applied Job Role:</label>
-    <input type="text" id="appliedJobRole" placeholder="Enter applied job role...">
-    <br><br>
+
+    <label for="candidateName">Your Name: <span id="candidateName">{{ current_user.name }}</span></label>
+
+    <p>Applied Job Role: <span id="appliedJobRole">{{ current_user.applied_job_role }}</span></p>
+
     <button id="startInterview">Start Interview</button>
 
     <h2>Question Showcase</h2>
@@ -23,10 +27,14 @@
 
     <button id="startSpeech">Start Speaking</button>
 
-    <script>
-        let questionId = 1; 
-        let jobRole = '';
+    {% else %}
+    <p>Please <a href="{{ url_for('routes.login') }}">log in</a> to access this page.</p>
+    {% endif %}
 
+    <script>
+        let questionId = 1;
+        let jobRole = '';
+    
         function fetchQuestion() {
             fetch(`/get_question/${jobRole}?question_id=${questionId}`)
                 .then(response => response.json())
@@ -42,17 +50,17 @@
                 })
                 .catch(error => console.error('Error:', error));
         }
-
-        document.getElementById('nextQuestion').addEventListener('click', function() {
+    
+        document.getElementById('nextQuestion').addEventListener('click', function () {
             const response = document.getElementById('response').value;
-            const candidateName = document.getElementById('candidateName').value.trim();
-            
+            const candidateName = document.getElementById('candidateName').innerText;
+    
             const payload = {
                 candidate_name: candidateName,
                 question_id: questionId - 1,
                 response: response
             };
-
+    
             fetch('/submit_response', {
                 method: 'POST',
                 headers: {
@@ -60,32 +68,33 @@
                 },
                 body: JSON.stringify(payload)
             })
-            .then(response => response.json())
-            .then(data => {
-                
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                
-            });
-            
+                .then(response => response.json())
+                .then(data => {
+    
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+    
             fetchQuestion();
         });
-
-        document.getElementById('startInterview').addEventListener('click', function() {
-            questionId = 1; 
-            const candidateName = document.getElementById('candidateName').value.trim();
-            jobRole = document.getElementById('appliedJobRole').value.trim();
+    
+        document.getElementById('startInterview').addEventListener('click', function () {
+            questionId = 1;
+            const candidateName = document.getElementById('candidateName').innerText;
+            jobRole = document.getElementById('appliedJobRole').innerText;
+            console.log(candidateName);
+            console.log(jobRole);
             fetchQuestion();
         });
-
+    
         const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         const recognition = new SpeechRecognition();
         recognition.lang = 'en-US';
-
+    
         let isListening = false;
-
-        document.getElementById('startSpeech').addEventListener('click', function() {
+    
+        document.getElementById('startSpeech').addEventListener('click', function () {
             if (!isListening) {
                 recognition.start();
                 isListening = true;
@@ -96,23 +105,24 @@
                 document.getElementById('startSpeech').innerText = 'Start Speaking';
             }
         });
-
-        recognition.onresult = function(event) {
+    
+        recognition.onresult = function (event) {
             const transcript = event.results[0][0].transcript;
             const responseTextarea = document.getElementById('response');
             responseTextarea.value += transcript;
         };
-        
-        recognition.onerror = function(event) {
+    
+        recognition.onerror = function (event) {
             console.error('Speech recognition error:', event.error);
             isListening = false;
             document.getElementById('startSpeech').innerText = 'Start Speaking';
         };
-
-        recognition.onend = function() {
+    
+        recognition.onend = function () {
             isListening = false;
             document.getElementById('startSpeech').innerText = 'Start Speaking';
         };
     </script>
-</body>
+    </body>
+
 </html>
