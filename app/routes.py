@@ -4,11 +4,12 @@ from .models import db, User, Candidate, Question, HRInput, CandidateResponse
 import openai
 import json
 import re
+from flask_mail import *
+from .extensions import mail
 
 routes_blueprint = Blueprint('routes', __name__)
 
 @routes_blueprint.route('/')
-
 def home():
     return render_template('index.html')
 
@@ -20,19 +21,53 @@ def protected():
 @routes_blueprint.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        username = request.form['username']
+        email = request.form['email']
         password = request.form['password']
         
-        user = User.query.filter_by(username=username).first()
+        user = User.query.filter_by(email=email).first()
 
         if user and user.check_password(password):
             login_user(user)
             flash('Login successful!', 'success')
             return redirect(url_for('routes.home'))
         else:
-            flash('Login failed. Check your username and password.', 'danger')
+            flash('Login failed. Check your email and password.', 'danger')
 
     return render_template('login.html')
+
+@routes_blueprint.route('/register', methods=['GET', 'POST'])
+def register():
+    if request.method == 'POST':
+        try:
+            email = request.form['email']
+            password = request.form['password']
+            name = request.form['name']
+            role = request.form['role']
+            applied_job_role = request.form.get('applied_job_role')
+
+            existing_user = User.query.filter_by(email=email).first()
+
+            if existing_user:
+                flash('Email already exists. Choose a different one.', 'danger')
+            else:
+                # Create a new user
+                new_user = User(email=email, name=name, applied_job_role=applied_job_role, user_type=role)
+                new_user.set_password(password)
+                db.session.add(new_user)
+                db.session.commit()
+
+                flash('Registration successful! You can now log in.', 'success')
+
+                # Create a new candidate associated with the registered user
+                new_candidate = Candidate(name=name, email=email)
+                db.session.add(new_candidate)
+                db.session.commit()
+
+                return redirect(url_for('routes.login'))
+        except Exception as e:
+            flash(f'Registration failed. Error: {str(e)}', 'danger')
+
+    return render_template('register.html')
 
 @routes_blueprint.route('/logout')
 @login_required
@@ -41,34 +76,44 @@ def logout():
     flash('Logout successful!', 'success')
     return redirect(url_for('routes.login'))
 
-@routes_blueprint.route('/register', methods=['GET', 'POST'])
-def register():
-    if request.method == 'POST':
-        try:
-            username = request.form['username']
-            password = request.form['password']
-            name = request.form['name']  # Add this line
-            applied_job_role = request.form['applied_job_role']  # Add this line
-
-            existing_user = User.query.filter_by(username=username).first()
-
-            if existing_user:
-                flash('Username already exists. Choose a different one.', 'danger')
-            else:
-                new_user = User(username=username, name=name, applied_job_role=applied_job_role)  # Update this line
-                new_user.set_password(password)
-                db.session.add(new_user)
-                db.session.commit()
-                flash('Registration successful! You can now log in.', 'success')
-                return redirect(url_for('routes.login'))
-        except Exception as e:
-            flash(f'Registration failed. Error: {str(e)}', 'danger')
-
-    return render_template('register.html')
-
 @routes_blueprint.route('/hr')
 def index():
     return render_template('hr.html')
+
+def send_emails(emails):
+    responses = []
+
+    for recipient_email in emails:
+        if recipient_email:
+            message = Message(
+                subject='HR Round Results',
+                body='Congratulations! You are Selected for the HR Round.',
+                sender='rahul.sehgal049@gmail.com',
+                recipients=[recipient_email]
+            )
+
+            try:
+                mail.send(message)
+                responses.append("Email sent successfully to {}".format(recipient_email))
+                print("Email sent successfully to", recipient_email)
+            except Exception as e:
+                responses.append("Error sending email to {}: {}".format(recipient_email, e))
+                print("Error sending email to {}: {}".format(recipient_email, e))
+        else:
+            responses.append("Invalid email address for a candidate")
+
+    return responses
+
+@routes_blueprint.route('/send_emails', methods=['POST'])
+@login_required
+def send_emails_route():
+    emails = request.form.getlist('emails')
+
+    if emails:
+        responses = send_emails(emails)
+        return render_template('results.html', Status='success', Data={'responses': responses})
+    else:
+        return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
 
 
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
@@ -128,28 +173,22 @@ def save_questions(job_role):
 
     return jsonify({'message': f'Questions for {job_role} role saved successfully'})
 
-
 @routes_blueprint.route('/get_question/<job_role>', methods=['GET'])
 def get_question(job_role):
     question_id = int(request.args.get('question_id', 1))
 
-    
     questions = Question.query.filter_by(job_role=job_role).all()
 
     if questions:
-        
         if 0 < question_id <= len(questions):
-            question = questions[question_id - 1]  
+            question = questions[question_id - 1]
             return jsonify({'question_id': question_id, 'question': question.content})
         else:
             return jsonify({'message': 'No more questions available for this job role'})
     else:
         return jsonify({'message': 'No questions available for this job role'})
-    
-    
-@login_required   
-      
-@login_required   
+
+@login_required
 @routes_blueprint.route('/submit_response', methods=['POST'])
 def submit_response():
     data = request.json
@@ -157,25 +196,21 @@ def submit_response():
     question_id = data.get('question_id')
     response = data.get('response')
 
-    
     candidate = Candidate.query.filter_by(name=candidate_name).first()
     if not candidate:
         candidate = Candidate(name=candidate_name)
         db.session.add(candidate)
         db.session.commit()
 
-    
     question = Question.query.get(question_id)
     if not question:
         return jsonify({'message': 'Question not found'}), 404
 
-    
     existing_response = CandidateResponse.query.filter_by(
         candidate_id=candidate.id, question_id=question_id).first()
     if existing_response:
         return jsonify({'message': 'Response already exists for this candidate and question'})
 
-    
     new_response = CandidateResponse(
         candidate_id=candidate.id,
         question_id=question_id,
@@ -186,6 +221,18 @@ def submit_response():
     db.session.commit()
 
     return jsonify({'message': 'Candidate response saved successfully'})
+
+def get_email(candidate_id):
+    try:
+        candidate = Candidate.query.get(candidate_id)
+        if candidate:
+            user = User.query.filter_by(email=candidate.email).first()
+            if user:
+                return user.email
+    except Exception as e:
+        print(f"Error in get_email function: {str(e)}")
+
+    return None
 
 def find_best_fit_candidates(job_role):
     system_message = "HR Interview Bot analyzes best-fit candidates based on their responses for job matching."
@@ -235,7 +282,6 @@ def find_best_fit_candidates(job_role):
     best_fit_candidates = model_response['choices'][0]['message']['content']
     return best_fit_candidates
 
-   
 @routes_blueprint.route('/get_best_fit_candidates/<job_role>', methods=['GET'])
 def get_best_fit_candidates(job_role):
     try:
@@ -246,9 +292,14 @@ def get_best_fit_candidates(job_role):
 
         if 'best_fit_candidates' in best_fit_candidates_dict:
             for candidate in best_fit_candidates_dict['best_fit_candidates']:
+                candidate_id = candidate.get('candidate_id', None)
+                fit_score = candidate.get('fit_score', None)
+                email = get_email(candidate_id)
+
                 refined_candidate = {
-                    'candidate_id': candidate.get('candidate_id', None),
-                    'fit_score': candidate.get('fit_score', None)
+                    'candidate_id': candidate_id,
+                    'email': email,
+                    'fit_score': fit_score
                 }
                 refined_candidates.append(refined_candidate)
 
