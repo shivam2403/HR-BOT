@@ -6,7 +6,7 @@ services:
     ports:
       - "5000:5000"
     environment:
-      OPENAI_API_KEY: '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'
+      OPENAI_API_KEY: ''
       SECRET_KEY: 'my-secret-key'
       DATABASE_URI: 'sqlite:////app/instance/questionaire1.db'  
     command: flask run --host=0.0.0.0 --port=5000
