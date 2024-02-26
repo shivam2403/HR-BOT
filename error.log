@@ -744,3 +744,603 @@ INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\rout
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:38] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:41] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:47] "[32mGET /callback?state=2XcUUdEaBW7enZSOKd39Fw33MsMjHE&code=4/0AeaYSHBmeZU6QlAJHd8egzX9zmf4p2x3UMpAoBI-iD1uP7yP_YIYkgZEIhMeUDEApjdWQQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:47] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:48] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:50] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:50] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:50] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:55] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 19:44:55] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 20:24:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [23/Feb/2024 20:24:38] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:00] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:08] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:10] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:11] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:13] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:14] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:21] "[32mGET /callback?state=sc4fVC7y6PjwKvIaD4OquLrNYtszac&code=4/0AeaYSHDJTTdZS4aKrdGA2qnZ-ihVkUqQscAoQRTpRo7PsOmDrLqnVXE4IdDQRTBwjzuPhQ&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:21] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:22] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:22] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:24] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:24] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:24] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:25] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:25] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [24/Feb/2024 18:44:26] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:40] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:40] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:41] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:43] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:43] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:44] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:51] "[32mGET /callback?state=swhaSptsfrdbXwcAnbrZgAUKUOcSnp&code=4/0AeaYSHCW25OzlJpZRfFblG5tYVKsRWtDMZ3GDS8MH6akZk1Rp7DndY7qX4ajLBJkXgJP6A&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:51] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:51] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:51] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:53] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:53] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:53] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:56] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:56] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:56] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:02:59] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:02] "[32mGET /callback?state=hFq8E7LJrckoHceIF6UZDrevynWCfi&code=4/0AeaYSHAI7hFZMoL2mTEJ7Th-Z4qrunI2y_i3roOKTr6VGY3_ah9v2-iG0SOAur3hxFz-dA&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:03] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:03] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:08] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:08] "GET /static/css/interview.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:08] "GET /static/js/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:03:08] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:29] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:29] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:29] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:30] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:31] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:32] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:32] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:43] "[31m[1mGET /save_hr_input_and_generate_questions HTTP/1.1[0m" 405 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:57] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:57] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:14:57] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:16:42] "[35m[1mGET /recruiter HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:16:42] "GET /recruiter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:16:42] "GET /recruiter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:16:43] "GET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:16:43] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:19:27] "[35m[1mGET /recruiter HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:19:27] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:19:27] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:19:28] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:19:35] "GET /recruiter HTTP/1.1" 200 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:20:16] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:20:16] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:22:23] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:22:23] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:22:31] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:22:31] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:23:13] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:23:13] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:07] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:12] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:18] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:22] "[35m[1mGET /recruiter HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:22] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:22] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:23] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:27:23] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:10] "[35m[1mGET /recruiter HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:11] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:11] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:11] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:47] "[35m[1mGET /recruiter HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:47] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:47] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:29:48] "[36mGET /recruiter?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:33:14] "GET /recruiter HTTP/1.1" 200 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:33:24] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:33:24] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:33:51] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:33:51] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:36:01] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:36:01] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:17] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:18] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:25] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:25] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:55] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:37:55] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:38:07] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:38:07] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:39:21] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:39:21] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:40:50] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:40:51] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:42:18] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:42:18] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:43:12] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:43:12] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.Completion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:43:24] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:43:24] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\91966\\vs code\\hrbot\\app\\routes.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+ERROR:root:Error in 'generate_hr_questions': 
+
+You tried to access openai.ChatCompletion, but this is no longer supported in openai>=1.0.0 - see the README at https://github.com/openai/openai-python for the API.
+
+You can run `openai migrate` to automatically upgrade your codebase to use the 1.0.0 interface. 
+
+Alternatively, you can pin your installation to the old version, e.g. `pip install openai==0.28`
+
+A detailed migration guide is available here: https://github.com/openai/openai-python/discussions/742
+
+ERROR:root:Error in 'extract_questions': expected string or bytes-like object
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.InterfaceError) Error binding parameter 0 - probably unsupported type.
+[SQL: INSERT INTO question (content, job_role) VALUES (?, ?)]
+[parameters: (<Response 46 bytes [200 OK]>, 'frontend')]
+(Background on this error at: https://sqlalche.me/e/20/rvf5)
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:45:34] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:45:34] "[36mGET /static/css/error.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:38] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:39] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:39] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:43] "GET /interview/react HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:43] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:44] "[36mGET /static/css/interview.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:44] "[36mGET /static/js/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:49] "GET /result HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:49] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:49] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:51] "GET /profile/1 HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:51] "[36mGET /static/css/profile.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:51] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:52] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:53] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 00:46:53] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:14] "GET /static/css/error.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:16] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:16] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:18] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:30] "[32mGET /callback?state=efsiBV9C1jA04Ut7J4m9O5u8vdQ1Qj&code=4/0AeaYSHAfrCygcQ6t6BDoNrYnv5BvCd0DsipMUhNvq-5APqkXB2BzoYMNZxu-kvH7ypqm8A&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:30] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:31] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:31] "GET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:33] "[32mGET /google_logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:09:33] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.3:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:11:56] "[32mGET /google_login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:12:10] "[32mGET /callback?state=esEFEdLZUmFQ467Sjj1kUhYQ0LkfE4&code=4/0AeaYSHAbO5-W7tRynPjF_dfLbLknEmNmjVsscOAzCd3R-IFq2OYcJxt46_12jXjgOUS5lg&scope=email+profile+https://www.googleapis.com/auth/userinfo.profile+https://www.googleapis.com/auth/userinfo.email+openid&authuser=0&prompt=consent HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:12:10] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:12:11] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:12:11] "[36mGET /static/assets/profile_pics/f5cf6e8e-3567-4f3e-9ff7-deefb2fbae20.jpg HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [26/Feb/2024 15:12:15] "GET /recruiter HTTP/1.1" 200 -

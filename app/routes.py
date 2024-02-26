@@ -16,6 +16,8 @@ import time
 from werkzeug.utils import secure_filename
 from flask import current_app
 
+
+
 # Setup logging configuration
 logging.basicConfig(filename='error.log', level=logging.ERROR)
 
@@ -54,16 +56,49 @@ def index():
         return jsonify({'error': 'An unexpected error occurred'}), 500
 
 
+# @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
+# def save_hr_input_and_generate_questions():
+#     try:
+#         data = request.json
+
+#         job_description = data.get('jobDescription')
+#         key_skills = data.get('keySkills')
+#         job_role = data.get('jobRole')
+#         required_experience = data.get('requiredExperience')
+
+#         new_hr_input = HRInput(
+#             job_description=job_description,
+#             key_skills=key_skills,
+#             job_role=job_role,
+#             required_experience=required_experience
+#         )
+
+#         db.session.add(new_hr_input)
+#         db.session.commit()
+
+#         generated_questions = generate_hr_questions(job_role)
+
+#         for question_content in extract_questions(generated_questions):
+#             new_question = Question(content=question_content, job_role=job_role)
+#             db.session.add(new_question)
+#             db.session.commit()
+
+#         return jsonify({'message': 'HR inputs and questions saved successfully'})
+#     except Exception as e:
+#         logging.error(f"Error in 'save_hr_input_and_generate_questions' route: {str(e)}")
+#         return jsonify({'error': 'An unexpected error occurred'}), 500
+
+
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
 def save_hr_input_and_generate_questions():
     try:
-        data = request.json
+        # Retrieve HR input data from the form
+        job_description = request.form.get('jobDescription')
+        key_skills = request.form.get('keySkills')
+        job_role = request.form.get('jobRole')
+        required_experience = request.form.get('requiredExperience')
 
-        job_description = data.get('jobDescription')
-        key_skills = data.get('keySkills')
-        job_role = data.get('jobRole')
-        required_experience = data.get('requiredExperience')
-
+        # Save HR input to the database (you may need to adjust this part based on your database model)
         new_hr_input = HRInput(
             job_description=job_description,
             key_skills=key_skills,
@@ -74,17 +109,22 @@ def save_hr_input_and_generate_questions():
         db.session.add(new_hr_input)
         db.session.commit()
 
+        # Generate questions based on the job role
         generated_questions = generate_hr_questions(job_role)
+        # print(generated_questions)
 
+        # Process and save the generated questions to the database (adjust based on your database model)
         for question_content in extract_questions(generated_questions):
             new_question = Question(content=question_content, job_role=job_role)
             db.session.add(new_question)
             db.session.commit()
 
-        return jsonify({'message': 'HR inputs and questions saved successfully'})
+        # Return a response (you may customize this part based on your needs)
+        return 'HR input and questions saved successfully'
+
     except Exception as e:
         logging.error(f"Error in 'save_hr_input_and_generate_questions' route: {str(e)}")
-        return jsonify({'error': 'An unexpected error occurred'}), 500
+        return render_template('error.html', error='An unexpected error occurred'), 500
 
 
 
@@ -101,8 +141,8 @@ def generate_hr_questions(role):
             max_tokens=300,
             messages=test_message
         )
-        
-        return complete['choices'][0]['message']['content']
+
+        return complete['choices'][0]['text']
     except Exception as e:
         logging.error(f"Error in 'generate_hr_questions': {str(e)}")
         return jsonify({'error': 'An unexpected error occurred'}), 500
@@ -814,3 +854,8 @@ def update_password():
     except Exception as e:
         logging.error(f"Exception in 'update_password' route: {str(e)}")
         return render_template('Error.html')
+    
+
+@routes_blueprint.route('/recruiter', methods=['GET', 'POST'])
+def recruiter():
+    return render_template('recruiter.html')
