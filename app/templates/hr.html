@@ -3,31 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <title>HR Input Form</title>
+  <link rel="stylesheet" href="../static/css/hr.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>HR Input Form</h1>
-  <form id="hrInputForm">
-    <label for="jobRole">Job Role:</label><br>
-    <input type="text" id="jobRole" name="jobRole"><br>
+  <div class="nav">
+    <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+  <div style="display: flex; align-items: center; gap: 20px;">
+    <a href="{{ url_for('routes.logout') }}"><button class="btn">Logout</button></a>
+    <a href="/profile/{{ current_user.id }}">
+      {% if current_user.profile_picture_filename and current_user.profile_picture_filename|length > 10 %}
+          <img class="nav_img" src="../static/{{ current_user.profile_picture_filename }}" alt="">
+      {% else %}
+          <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+      {% endif %}
+    
+    </a>
+  </div>
+  </div>
+  <div class="hr">
+    
+    <h1 style="margin-bottom: 20px;">HR Input Form</h1>
+    <form id="hrInputForm">
+      
+      <label style="font-size: 20px;" for="jobRole">Job Role:</label><br>
+      <input class="s_input" type="text" id="jobRole" name="jobRole"><br>
+        
+    
+      <label style="font-size: 20px;" for="jobDescription">Job Description:</label><br>
+      <textarea class="s_input" id="jobDescription" name="jobDescription"></textarea><br>
+    
+      <label style="font-size: 20px;" for="keySkills">Key Skills:</label><br>
+      <input class="s_input" type="text" id="keySkills" name="keySkills"><br>
+  
+      <label style="font-size: 20px;" for="requiredExperience">Required Experience:</label><br>
+      <input class="s_input" type="text" id="requiredExperience" name="requiredExperience"><br><br>
+  
 
-    <label for="jobDescription">Job Description:</label><br>
-    <textarea id="jobDescription" name="jobDescription"></textarea><br>
-
-    <label for="keySkills">Key Skills:</label><br>
-    <input type="text" id="keySkills" name="keySkills"><br>
-
-    <label for="requiredExperience">Required Experience:</label><br>
-    <input type="text" id="requiredExperience" name="requiredExperience"><br><br>
-
-    <button type="submit">Submit</button>
+    <button class="btn" type="submit">Submit</button>
   </form>
-
+  
   <script>
     document.getElementById("hrInputForm").addEventListener("submit", function(event) {
       event.preventDefault();
       const formData = new FormData(this);
       const jsonFormData = {};
-
+      
       for (const [key, value] of formData.entries()) {
         jsonFormData[key] = value;
       }
@@ -47,6 +68,7 @@
         console.error('Error:', error);
       });
     });
-  </script>
+    </script>
+    </div>
 </body>
 </html>

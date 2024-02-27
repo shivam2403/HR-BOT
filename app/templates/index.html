@@ -1,40 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>HR bot - Home</title>
-    <link rel="stylesheet" href="../static/css/index.css" />
+
+<head>
+    <meta charset="UTF-8">
+    <title>Candidate Interview</title>
+    <link rel="stylesheet" href="../static/css/index.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body>
-    <div class="dashboard">
-      <div class="nav">
-        <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
-        <div style="display: flex; align-items: center; gap: 20px;">
-          <a href="/google_logout"><button class="btn">Logout</button></a>
-          <a href="/profile/{{ user.id }}">
-            {% if user.profile_picture_filename and user.profile_picture_filename|length > 10 %}
-                <img class="nav_img" src="../static/{{ user.profile_picture_filename }}" alt="">
-            {% else %}
-                <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
-            {% endif %}
-          
-          </a>
-        </div>
-      </div>
-      <div class="d_title">
-        <h1>Candidate <span style="color: #2bbe60;">Interview</span></h1>
-      </div>
-      <div class="user_info">
-        {% if user %}
-          <h2 style="font-size: 50px;"><span style="font-weight: bold;">Hello,</span> {{ user.username }}</h2>
-        {% elif google_name %}
-          <h2 style="font-size: 50px;"><span style="font-weight: bold;">Hello,</span> {{ google_name }}</h2>
+</head>
+
+<body>
+
+    {% if current_user.is_authenticated %}
+    <div class="nav">
+      <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+    <div style="display: flex; align-items: center; gap: 20px;">
+      <a href="{{ url_for('routes.logout') }}"><button class="btn">Logout</button></a>
+      <a href="/profile/{{ current_user.id }}">
+        {% if current_user.profile_picture_filename and current_user.profile_picture_filename|length > 10 %}
+            <img class="nav_img" src="../static/{{ current_user.profile_picture_filename }}" alt="">
+        {% else %}
+            <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
         {% endif %}
-        </div>
+      
+      </a>
+    </div>
+    </div>
+    <!-- <p>Welcome, {{ current_user.username }}!</p> -->
+    <div class="d_title">
+      <h1>Candidate <span style="color: #2bbe60;">Interview</span></h1>
+    </div>
+
+
+    <div class="user_info">
+        {% if current_user %}
+          <p style="font-size: 30px;"><span style="font-weight: bold;">Your Name:</span> {{ current_user.name }}</p>
+          <p style="font-size: 30px;"><span style="font-weight: bold;">Applied Job Role:</span> {{ current_user.applied_job_role }}</p>
+        {% endif %}
+    </div>
+
 
         <div class="role">
             <span style="font-weight: bold;">Enter your applied job role here</span>
@@ -58,10 +64,14 @@
             <button class="btn" id="startSpeech">Start Speaking</button>
         </div>
 
-      <script>
-        let questionId = 1;
-        let jobRole = "";
+    {% else %}
+    <p>Please <a href="{{ url_for('routes.login') }}">log in</a> to access this page.</p>
+    {% endif %}
 
+    <script>
+        let questionId = 1;
+        let jobRole = '';
+    
         function fetchQuestion() {
           fetch(`/get_question/${jobRole}?question_id=${questionId}`)
             .then((response) => response.json())
@@ -77,58 +87,51 @@
             })
             .catch((error) => console.error("Error:", error));
         }
-
-        document
-          .getElementById("nextQuestion")
-          .addEventListener("click", function () {
-            const response = document.getElementById("response").value;
-            const candidateName = document
-              .getElementById("candidateName")
-              .value.trim();
-
+    
+        document.getElementById('nextQuestion').addEventListener('click', function () {
+            const response = document.getElementById('response').value;
+            const candidateName = document.getElementById('candidateName').innerText;
+    
             const payload = {
               candidate_name: candidateName,
               question_id: questionId - 1,
               response: response,
             };
-
-            fetch("/submit_response", {
-              method: "POST",
-              headers: {
-                "Content-Type": "application/json",
-              },
-              body: JSON.stringify(payload),
+    
+            fetch('/submit_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(payload)
             })
-              .then((response) => response.json())
-              .then((data) => {})
-              .catch((error) => {
-                console.error("Error:", error);
-              });
-
+                .then(response => response.json())
+                .then(data => {
+    
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                });
+    
             fetchQuestion();
-          });
-
-        document
-          .getElementById("startInterview")
-          .addEventListener("click", function () {
+        });
+    
+        document.getElementById('startInterview').addEventListener('click', function () {
             questionId = 1;
-            const candidateName = document
-              .getElementById("candidateName")
-              .value.trim();
-            jobRole = document.getElementById("appliedJobRole").value.trim();
+            const candidateName = document.getElementById('candidateName').innerText;
+            jobRole = document.getElementById('appliedJobRole').innerText;
+            console.log(candidateName);
+            console.log(jobRole);
             fetchQuestion();
-          });
-
-        const SpeechRecognition =
-          window.SpeechRecognition || window.webkitSpeechRecognition;
+        });
+    
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
         const recognition = new SpeechRecognition();
-        recognition.lang = "en-US";
-
+        recognition.lang = 'en-US';
+    
         let isListening = false;
-
-        document
-          .getElementById("startSpeech")
-          .addEventListener("click", function () {
+    
+        document.getElementById('startSpeech').addEventListener('click', function () {
             if (!isListening) {
               recognition.start();
               isListening = true;
@@ -169,14 +172,25 @@
                 nav.classList.remove("scrolled");
             }
         });
-    });
+    
+        recognition.onresult = function (event) {
+            const transcript = event.results[0][0].transcript;
+            const responseTextarea = document.getElementById('response');
+            responseTextarea.value += transcript;
+        };
+    
+        recognition.onerror = function (event) {
+            console.error('Speech recognition error:', event.error);
+            isListening = false;
+            document.getElementById('startSpeech').innerText = 'Start Speaking';
+        };
+    
+        recognition.onend = function () {
+            isListening = false;
+            document.getElementById('startSpeech').innerText = 'Start Speaking';
+        };
+      })
+    </script>
+    </body>
 
-    document.getElementById("startInterview").addEventListener("click", function () {
-    const appliedRole = document.getElementById("appliedJobRole").value.trim();
-    window.location.href = `/interview/${appliedRole}`;
-  });
-
-      </script>
-    </div>
-  </body>
 </html>

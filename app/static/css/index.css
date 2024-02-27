@@ -4,7 +4,7 @@
     font-family: 'Poppins', sans-serif;
 }
 
-.dashboard{
+html{
     min-height: 100vh;
     background-color: rgb(238, 238, 238);
     /* background-color: red; */
@@ -24,7 +24,7 @@
 
 .user_info{
     margin-left: 50px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .role{

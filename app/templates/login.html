@@ -1,3 +1,6 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -11,7 +14,7 @@
     <div class="login">
       <div class="l_left">
         <h1 style="font-size: 60px;">Log In</h1>
-        <form class="l_form" action="/login" method="POST">
+        <form class="l_form" action="{{ url_for('routes.login') }}" method="POST">
           <div class="l_email">
             <label for="email" class="form-label">Email</label>
             <input type="email" class="form-control l_input" name="email" id="email" />
@@ -34,7 +37,7 @@
         <div>
           <span>Don't have an account?  </span
           >
-          <a href="/signup" style="text-decoration: none;">SignUp</a>
+          <a href="{{ url_for('routes.register') }}" style="text-decoration: none;">SignUp</a>
         </div>
       </div>
       <div class="l_right">

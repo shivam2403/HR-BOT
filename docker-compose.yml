@@ -6,23 +6,10 @@ services:
     ports:
       - "5000:5000"
     environment:
-      OPENAI_API_KEY: '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'
+      OPENAI_API_KEY: ''
       SECRET_KEY: 'my-secret-key'
-      DATABASE_URI: 'postgresql://postgres:FunnelHQ@database-1.cv0om20okbqv.eu-north-1.rds.amazonaws.com:5432/Questionaire-2'
-    depends_on:
-      - db
-    command: flask run --host=0.0.0.0 --port=5000  # Adjust the command if needed
-
-  db:
-    image: postgres:latest
-    ports:
-      - "5432:5432"
-    environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: FunnelHQ
-      POSTGRES_DB: Questionaire-2
-    volumes:
-      - pgdata:/var/lib/postgresql/data  # Persist data in a named volume
+      DATABASE_URI: 'sqlite:////app/instance/questionaire1.db'  
+    command: flask run --host=0.0.0.0 --port=5000
 
 volumes:
-  pgdata:
+  pgdata:  # Removed the PostgreSQL data volume
