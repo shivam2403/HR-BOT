@@ -1701,3 +1701,250 @@ INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:10:15] "GET /register HTTP/1.1" 200 
 INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:10:15] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
 INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:10:32] "GET /login HTTP/1.1" 200 -
 INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:10:32] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.228.153:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:19] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:27] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:27] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:27] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:29] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:30] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:31] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 13:29:32] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.1.9:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 280-905-233
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:51] "[32mGET / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:51] "GET /login?next=/ HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:51] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:52] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:54] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 20:27:54] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:38] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:42] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:42] "GET /static/css/login.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:52] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:52] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:56] "[33mGET /profile/2 HTTP/1.1[0m" 404 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:58] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:58] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:22:58] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:02] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:02] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:04] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:05] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:05] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:29] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:23:30] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:24:40] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:24:40] "GET /static/css/signup.css HTTP/1.1" 200 -
+ERROR:root:Registration failed. Error: (sqlite3.OperationalError) table candidate has no column named resume_path
+[SQL: INSERT INTO candidate (email, name, resume_path, skillset, linkedin_url, github_link, twitter_link, portfolio_link, profile_picture_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('shivam@funnelhq.co', 'John Doe', None, None, None, None, None, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:05] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:05] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:09] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:09] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:18] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:18] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:19] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:22] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:23] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:23] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:27] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:25:27] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:26:38] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:26:38] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:26:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:26:48] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:26:48] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:30:55] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:30:55] "GET /static/css/index.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:31:15] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:31:15] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:31:29] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:31:29] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:05] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:05] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:20] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:20] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:27] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:32:28] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:12] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:12] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:26] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:26] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:28] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:33:28] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:12] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:12] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:25] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:25] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:30] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:30] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:53] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:34:53] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:05] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:05] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:23] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:23] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:37] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:35:37] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:09] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:09] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:23] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:23] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:27] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:27] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:28] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:28] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:38] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:38] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:46] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:46] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:59] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:36:59] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:37:50] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:37:50] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:05] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:05] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:26] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:26] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:52] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:38:52] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:08] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:08] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:19] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:19] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:46] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:46] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:53] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:39:53] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:08] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:08] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:29] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:29] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:41] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:41] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:49] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:40:49] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:02] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:02] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:20] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:21] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:49] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:41:49] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:42:46] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:42:46] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:43:02] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:43:02] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:44:30] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:44:30] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:45:42] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:45:42] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:45:57] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:45:57] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:17] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:17] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:23] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:24] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:45] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:45] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:57] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:46:57] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:47:56] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:47:56] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:04] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:04] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:13] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:13] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:17] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:18] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:28] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:28] "GET /static/css/hr.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:38] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:38] "GET /static/css/hr.css HTTP/1.1" 200 -
+ERROR:root:Error in 'save_hr_input_and_generate_questions' route: (sqlite3.IntegrityError) NOT NULL constraint failed: hr_input.job_description
+[SQL: INSERT INTO hr_input (job_description, key_skills, job_role, required_experience) VALUES (?, ?, ?, ?)]
+[parameters: (None, None, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/gkpj)
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:53] "[35m[1mPOST /save_hr_input_and_generate_questions HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:55] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:55] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:56] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:58] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:48:59] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:11] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:11] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:20] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:20] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:38] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:38] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:44] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:44] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:57] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:50:57] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:00] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:00] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:20] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:20] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:34] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:34] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:40] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:51:40] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:04] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:05] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:06] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:06] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:08] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:08] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:12] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:52:12] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:30] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:30] "GET /static/css/signup.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:33] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:33] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:39] "GET /hr HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:54:39] "[36mGET /static/css/hr.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:55:16] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:55:17] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+ERROR:root:Registration failed. Error: (sqlite3.OperationalError) table candidate has no column named resume_path
+[SQL: INSERT INTO candidate (email, name, resume_path, skillset, linkedin_url, github_link, twitter_link, portfolio_link, profile_picture_filename) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)]
+[parameters: ('vigorouskowalevski@imcourageous.com', 'Tom', None, None, None, None, None, None, None)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:04] "POST /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:04] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:07] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:07] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:16] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:17] "[36mGET /static/css/index.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:20] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:21] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:21] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:23] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:23] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:50] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:56:50] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:58:35] "GET /register HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:58:35] "[36mGET /static/css/signup.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:58:41] "GET /login HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [27/Feb/2024 21:58:41] "[36mGET /static/css/login.css HTTP/1.1[0m" 304 -

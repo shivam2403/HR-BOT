@@ -7,7 +7,6 @@
 .signup{
     display: flex;
     height: 100vh;
-    width: 100vw;
 }
 
 .s_left{
@@ -17,56 +16,57 @@
     justify-content: center;
     flex-direction: column;
     gap: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .s_form{
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .s_password{
-    width: 300px;
     display: flex;
     flex-direction: column;
-    font-size: 22px;
+    font-size: 15px;
     gap: 5px;
+    width: 90%;
 }
 
 .s_email{
-    width: 300px;
     display: flex;
     flex-direction: column;
-    font-size: 22px;
-    /* gap: 5px; */
+    font-size: 15px;
+    gap: 5px;
+    width: 90%;
 }
 
 .s_input{
-    padding: 5px;
+    width: 100%;
+    height: 15px;
+    padding: 10px;
     border: none;
     outline: none;
     border-radius: 5px;
-    border: 2px solid black;
-    outline: none;
-    width: 290px;
+    border: 2px solid #D9D7D7;
 }
 
 
 .s_btn{
     padding: 8px;
-    font-size: 20px;
-    border-radius: 10px;
+    font-size: 15px;
+    border-radius: 5px;
     border: none;
     cursor: pointer;
     color: white;
-    width: 100%;
-    background-color: #2bbe60;
-}
-
-.s_btn:hover{
-
+    width: 540px;
+    background-color: #323782;
+    margin-left: 22px;
+    color: #FFFFFF;
 }
 
 .s_google_btn{
@@ -89,8 +89,6 @@
 }
 
 .s_right{
-    background: url('https://www.clker.com/cliparts/5/4/8/a/12401655391311375203boobaloo_Chemistry_Conical_Funnel.svg.hi.png');
-    background-color: rgba(128, 128, 128, 0.5);
     flex: 1;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -104,11 +102,13 @@
 }
 
 .s_right_hr{
+    background-color: rgba(128, 128, 128, 0.5);
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 100px;
-    width: 400px;
+    margin-top: 20px;
+    width: 90%;
+    height: 95%;
     margin-left: auto;
     margin-right: auto;
 }
@@ -129,4 +129,9 @@
     border: none;
     cursor: pointer;
     color: white;
+}
+
+.form-label{
+    color:#2C2C2C;
+    font-weight: bold;
 }

@@ -1,104 +1,52 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register</title>
-    <link rel="stylesheet" href="../static/css/signup.css">
-</head>
-
-<body>
-    <div>
-        <h1>Register</h1>
-
-        <form action="{{ url_for('routes.register') }}" method="post">
-            <div>
-                <label for="email">Email:</label>
-                <input type="email" name="email" required>
-            </div>
-            <div>
-                <label for="password">Password:</label>
-                <input type="password" name="password" required>
-            </div>
-            <div>
-                <label for="name">Your Name:</label>
-                <input type="text" name="name" required>
-            </div>
-            <div>
-                <label for="role">Select Role:</label>
-                <select name="role" id="role" onchange="toggleJobRoleField()">
-                    <option value="candidate">Candidate</option>
-                    <option value="hr">HR</option>
-                </select>
-            </div>
-            <div id="appliedJobRoleField">
-                <label for="applied_job_role">Applied Job Role:</label>
-                <input type="text" name="applied_job_role" required>
-            </div>
-            <script>
-                // Set the initial state of the appliedJobRoleField
-                document.getElementById('appliedJobRoleField').style.display = 'block';
-
-                function toggleJobRoleField() {
-                    var roleDropdown = document.getElementById('role');
-                    var appliedJobRoleField = document.getElementById('appliedJobRoleField');
-
-                    appliedJobRoleField.style.display = roleDropdown.value === 'hr' ? 'none' : 'block';
-                }
-            </script>
-            <div>
-                <input type="submit" value="Register">
-            </div>
-        </form>
-
-        <p>
-            Already have an account? <a href="{{ url_for('routes.login') }}">Login as Existing Member</a>
-        </p>
-    </div>
-</body>
-
-</html> -->
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HR bot - Signup</title>
-    <link rel="stylesheet" href="../static/css/signup.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="signup">
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>HR bot - Signup</title>
+      <link rel="stylesheet" href="../static/css/signup.css">
+      <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="signup">
+        <div class="s_right">
+          <div class="s_right_hr">
+            
+          </div>
+        </div>
       <div class="s_left">
-        <h1 style="font-size: 60px;">Create Account</h1>
+        <div style="display: flex; flex-direction: column;align-items: center;">
+            <h2 style="font-size: 50px; color: #2C2C2C;">Sign Up</h2>
+            <p style="color:#4C4C4C">Fill the details to create your account</p>
+        </div>
         <form class="s_form" action="{{ url_for('routes.register') }}" method="POST">
             <div class="s_email">
-                <label for="email">Email:</label>
+                <label style="font-weight: bold;" for="email">Email:</label>
                 <input class="s_input" type="email" name="email" required>
             </div>
             <div class="s_password">
-                <label for="password">Password:</label>
+                <label style="font-weight: bold;" for="password">Password:</label>
                 <input class="s_input" type="password" name="password" required>
             </div>
             <div class="s_email">
-                <label for="name">Name:</label>
+                <label style="font-weight: bold;" for="name">Name:</label>
                 <input class="s_input" type="text" name="name" required>
             </div>
             <div class="s_email">
-                <label for="role">Select Role:</label>
-                <select class="s_input" style="width: 305px;" name="role" id="role" onchange="toggleJobRoleField()">
+                <label style="font-weight: bold;" for="role">Select Role:</label>
+                <select class="s_input" style="width: 540px;height: 45px;" name="role" id="role" onchange="toggleJobRoleField()">
                     <option value="candidate">Candidate</option>
                     <option value="hr">HR</option>
                 </select>
             </div>
             <div id="appliedJobRoleField" class="s_email">
-                <label for="applied_job_role">Applied Job Role:</label>
+                <label style="font-weight: bold;" for="applied_job_role">Applied Job Role:</label>
                 <input class="s_input" type="text" name="applied_job_role" required>
             </div>
+            <div style="display: flex;width: 90%; justify-content: space-between;align-items: center;">
+                <span style="display: flex;align-items: center; gap: 5px;"><input type="checkbox" name="" id=""> Remember me</span>
+                <a style="text-decoration: none;" href="">Forgot Password?</a>
+              </div>
             <script>
                 // Set the initial state of the appliedJobRoleField
                 document.getElementById('appliedJobRoleField').style.display = 'block';
@@ -110,23 +58,14 @@
                     appliedJobRoleField.style.display = roleDropdown.value === 'hr' ? 'none' : 'block';
                 }
             </script>
-          <button type="submit" class="s_btn">Sign Up</button>
+          <button type="submit" class="s_btn">Get Started</button>
         </form>
         <div>
           <span>Already have an account?  </span
-            ><a href="{{ url_for('routes.login') }}" style="text-decoration: none"
+            ><a href="{{ url_for('routes.login') }}" style="text-decoration: none; font-weight: bold;color: #323782;"
             >LogIn</a
             >
           </div>
-      </div>
-      <div class="s_right">
-        <h1 class="s_right_title">FunnelHQ</h1>
-        <div class="s_right_hr">
-          <h2 class="s_right_hr_title">HRbot</h2>
-          <p class="s_right_hr_desc">
-            Revolutionize HR processes with our innovative HRbot project. Streamline employee onboarding, automate routine tasks, and enhance communication. Boost efficiency, engagement, and workplace satisfaction with cutting-edge AI-powered HR solutions.
-          </p>
-        </div>
       </div>
     </div>
   </body>

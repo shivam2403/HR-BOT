@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,15 +6,25 @@
     <title>HR bot - Login</title>
     <link rel="stylesheet" href="../static/css/login.css" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iKSe1N6IbN99OpPT0082r/jLl+5Ar5ZheBUyL2BEK++XWnMWVCXaUrlcl" crossorigin="anonymous">
+
   </head>
   <body>
-    <div class="login">
+      <div class="login">
+        <div class="l_right">
+          <div class="l_right_hr">
+
+          </div>
+        </div>
       <div class="l_left">
-        <h1 style="font-size: 60px;">Log In</h1>
+        <div>
+            <h2 style="font-size: 50px; color: #2C2C2C;">Welcome back</h2>
+            <p style="color:#4C4C4C">Enter your email and password to access your account</p>
+        </div>
         <form class="l_form" action="{{ url_for('routes.login') }}" method="POST">
           <div class="l_email">
             <label for="email" class="form-label">Email</label>
-            <input type="email" class="form-control l_input" name="email" id="email" />
+            <input type="email" class="form-control l_input" name="email" id="email" placeholder="Enter your email" />
           </div>
           <div class="l_password">
             <label for="password" class="form-label">Password</label>
@@ -26,27 +33,30 @@
               class="form-control l_input"
               name="password"
               id="password"
+              placeholder="Enter your password"
             />
           </div>
-          <button type="submit" class="l_btn">Log In</button>
-          <a style="margin-left: -155px;" href="/forgot_password">Forgot Password?</a>
-          <span>or</span>
+          <div style="display: flex;width: 90%; justify-content: space-between;align-items: center;">
+            <span style="display: flex;align-items: center; gap: 5px;"><input type="checkbox" name="" id=""> Remember me</span>
+            <a style="text-decoration: none;" href="">Forgot Password?</a>
+          </div>
+          <button type="submit" class="l_btn">Login</button>
         </form>
-        <a href="/google_login" class="l_google_btn">
-         <img style="height: 20px; width: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Google-favicon-2015.png" alt="">Continue with Google</a>
-        <div>
-          <span>Don't have an account?  </span
-          >
-          <a href="{{ url_for('routes.register') }}" style="text-decoration: none;">SignUp</a>
+        <div class="l_down">
+            <div class="l_down_signup">
+                Don't have an account? <a href="{{ url_for('routes.register') }}" style="text-decoration: none;font-weight: bold;color: #323782">SignUp</a>
+            </div>
+            <div class="l_down_options">
+                <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" type='logo' name='google'></box-icon>
+                <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" name='globe'></box-icon>
+                <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" name='code-alt' ></box-icon>
+                <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" type='logo' name='linkedin'></box-icon>
+
+            </div>
         </div>
-      </div>
-      <div class="l_right">
-        <h1 class="l_right_title">FunnelHQ</h1>
-        <div class="l_right_hr">
-          <h2 class="l_right_hr_title">HRbot</h2>
-          <p class="l_right_hr_desc">Revolutionize HR processes with our innovative HRbot project. Streamline employee onboarding, automate routine tasks, and enhance communication. Boost efficiency, engagement, and workplace satisfaction with cutting-edge AI-powered HR solutions.</p>
-        </div>
+        
       </div>
     </div>
-  </body>
+</body>
+<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </html>

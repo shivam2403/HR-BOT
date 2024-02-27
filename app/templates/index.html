@@ -15,7 +15,7 @@
 
     {% if current_user.is_authenticated %}
     <div class="nav">
-      <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+      <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #323782;font-weight: bold;">HQ</span></a></h1>
     <div style="display: flex; align-items: center; gap: 20px;">
       <a href="{{ url_for('routes.logout') }}"><button class="btn">Logout</button></a>
       <a href="/profile/{{ current_user.id }}">
@@ -30,7 +30,7 @@
     </div>
     <!-- <p>Welcome, {{ current_user.username }}!</p> -->
     <div class="d_title">
-      <h1>Candidate <span style="color: #2bbe60;">Interview</span></h1>
+      <h1>Candidate <span style="color: #323782;">Interview</span></h1>
     </div>
 
 

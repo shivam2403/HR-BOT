@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="nav">
-    <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #2bbe60;font-weight: bold;">HQ</span></a></h1>
+    <h1 style="font-size: 40px;"><a style="text-decoration: none;color: inherit;" href="/">Funnel<span style="color: #323782;font-weight: bold;">HQ</span></a></h1>
   <div style="display: flex; align-items: center; gap: 20px;">
     <a href="{{ url_for('routes.logout') }}"><button class="btn">Logout</button></a>
     <a href="/profile/{{ current_user.id }}">
@@ -24,20 +24,43 @@
   <div class="hr">
     
     <h1 style="margin-bottom: 20px;">HR Input Form</h1>
-    <form id="hrInputForm">
+    <form class="s_form" id="hrInputForm">
       
-      <label style="font-size: 20px;" for="jobRole">Job Role:</label><br>
-      <input class="s_input" type="text" id="jobRole" name="jobRole"><br>
+      <div class="s_email">
+        <div class="s_label">
+          <label style="font-size: 20px;" for="jobRole">Job Role:</label><br>
+        </div>
+        <div class="s_input_container">
+          <input class="s_input" type="text" id="jobRole" name="jobRole"><br>
+        </div>
+      </div>
         
+      <div class="s_email">
+        <div class="s_label">
+          <label class="s_label" style="font-size: 20px;" for="jobDescription">Job Description:</label><br>
+        </div>
+        <div class="s_input_container">
+          <textarea class="s_input" id="jobDescription" name="jobDescription"></textarea><br>
+        </div>
+    </div>
     
-      <label style="font-size: 20px;" for="jobDescription">Job Description:</label><br>
-      <textarea class="s_input" id="jobDescription" name="jobDescription"></textarea><br>
-    
-      <label style="font-size: 20px;" for="keySkills">Key Skills:</label><br>
-      <input class="s_input" type="text" id="keySkills" name="keySkills"><br>
+    <div class="s_email">
+      <div class="s_label">
+        <label class="s_label" style="font-size: 20px;" for="keySkills">Key Skills:</label><br>
+      </div>
+      <div class="s_input_container">
+        <input class="s_input" type="text" id="keySkills" name="keySkills"><br>
+      </div>
+  </div>
   
-      <label style="font-size: 20px;" for="requiredExperience">Required Experience:</label><br>
+  <div class="s_email">
+    <div class="s_label">
+      <label class="s_label" style="font-size: 20px;" for="requiredExperience">Required Experience:</label><br>
+    </div>
+    <div class="s_input_container">
       <input class="s_input" type="text" id="requiredExperience" name="requiredExperience"><br><br>
+    </div>
+</div>
   
 
     <button class="btn" type="submit">Submit</button>
