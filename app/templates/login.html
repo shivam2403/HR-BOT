@@ -17,9 +17,9 @@
           </div>
         </div>
       <div class="l_left">
-        <div>
-            <h2 style="font-size: 50px; color: #2C2C2C;">Welcome back</h2>
-            <p style="color:#4C4C4C">Enter your email and password to access your account</p>
+        <div class="l_left_title">
+            <h2 class="l_left_title_heading">Welcome back</h2>
+            <p class="l_left_title_desc">Enter your email and password to access your account</p>
         </div>
         <form class="l_form" action="{{ url_for('routes.login') }}" method="POST">
           <div class="l_email">
@@ -36,22 +36,21 @@
               placeholder="Enter your password"
             />
           </div>
-          <div style="display: flex;width: 90%; justify-content: space-between;align-items: center;">
-            <span style="display: flex;align-items: center; gap: 5px;"><input type="checkbox" name="" id=""> Remember me</span>
-            <a style="text-decoration: none;" href="">Forgot Password?</a>
+          <div class="l_reminder">
+            <span class="l_reminder_left"><input type="checkbox" name="" id=""> Remember me</span>
+            <a class="l_reminder_right" href="">Forgot Password?</a>
           </div>
           <button type="submit" class="l_btn">Login</button>
         </form>
         <div class="l_down">
-            <div class="l_down_signup">
-                Don't have an account? <a href="{{ url_for('routes.register') }}" style="text-decoration: none;font-weight: bold;color: #323782">SignUp</a>
+            <div >
+                Don't have an account? <a class="l_down_signup" href="{{ url_for('routes.register') }}" >Signup</a>
             </div>
             <div class="l_down_options">
                 <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" type='logo' name='google'></box-icon>
                 <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" name='globe'></box-icon>
                 <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" name='code-alt' ></box-icon>
                 <box-icon style="color: #323782; background-color: #DEE0FF; width: 50px;height: 50px;padding: 13px;cursor:pointer;" type='logo' name='linkedin'></box-icon>
-
             </div>
         </div>
         

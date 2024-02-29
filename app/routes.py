@@ -6,57 +6,39 @@ import json
 import re
 from flask_mail import *
 from .extensions import mail
-import logging
-
-# Setup logging configuration
-logging.basicConfig(filename='error.log', level=logging.ERROR)
 
 routes_blueprint = Blueprint('routes', __name__)
 
+@routes_blueprint.route('/')
+def home():
+    return render_template('index.html')
 
 @routes_blueprint.route('/protected')
 @login_required
 def protected():
-    try:
-        return 'This is a protected route.'
-    except Exception as e:
-        logging.error(f'Error in protected route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
-
-@routes_blueprint.route('/')
-@login_required
-def home():
-    try:
-        return render_template('index.html')
-    except Exception as e:
-        logging.error(f'Error in home route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    return 'This is a protected route.'
 
 @routes_blueprint.route('/login', methods=['GET', 'POST'])
 def login():
-    try:
-        if request.method == 'POST':
-            email = request.form['email']
-            password = request.form['password']
+    if request.method == 'POST':
+        email = request.form['email']
+        password = request.form['password']
+        
+        user = User.query.filter_by(email=email).first()
 
-            user = User.query.filter_by(email=email).first()
+        if user and user.check_password(password):
+            login_user(user)
+            flash('Login successful!', 'success')
+            return redirect(url_for('routes.home'))
+        else:
+            flash('Login failed. Check your email and password.', 'danger')
 
-            if user and user.check_password(password):
-                login_user(user)
-                flash('Login successful!', 'success')
-                return redirect(url_for('routes.home'))
-            else:
-                flash('Login failed. Check your email and password.', 'danger')
-
-        return render_template('login.html')
-    except Exception as e:
-        logging.error(f'Error in login route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    return render_template('login.html')
 
 @routes_blueprint.route('/register', methods=['GET', 'POST'])
 def register():
-    try:
-        if request.method == 'POST':
+    if request.method == 'POST':
+        try:
             email = request.form['email']
             password = request.form['password']
             name = request.form['name']
@@ -82,214 +64,163 @@ def register():
                 db.session.commit()
 
                 return redirect(url_for('routes.login'))
-    except Exception as e:
-        logging.error(f'Registration failed. Error: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+        except Exception as e:
+            flash(f'Registration failed. Error: {str(e)}', 'danger')
 
     return render_template('register.html')
-
 
 @routes_blueprint.route('/logout')
 @login_required
 def logout():
-    try:
-        logout_user()
-        flash('Logout successful!', 'success')
-        return redirect(url_for('routes.login'))
-    except Exception as e:
-        logging.error(f'Error in "logout" route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
-
+    logout_user()
+    flash('Logout successful!', 'success')
+    return redirect(url_for('routes.login'))
 
 @routes_blueprint.route('/hr')
 def index():
-    try:
-        return render_template('hr.html')
-    except Exception as e:
-        logging.error(f'Error in "hr" route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
-
-
+    return render_template('hr.html')
 
 def send_emails(emails):
-    try:
-        responses = []
+    responses = []
 
-        for recipient_email in emails:
-            if recipient_email:
-                message = Message(
-                    subject='HR Round Results',
-                    body='Congratulations! You are Selected for the HR Round.',
-                    sender='dev@funnelhq.co',
-                    recipients=[recipient_email]
-                )
+    for recipient_email in emails:
+        if recipient_email:
+            message = Message(
+                subject='HR Round Results',
+                body='Congratulations! You are Selected for the HR Round.',
+                sender='dev@funnelhq.co',
+                recipients=[recipient_email]
+            )
 
-                try:
-                    mail.send(message)
-                    responses.append("Email sent successfully to {}".format(recipient_email))
-                    print("Email sent successfully to", recipient_email)
-                except Exception as e:
-                    responses.append("Error sending email to {}: {}".format(recipient_email, e))
-                    print("Error sending email to {}: {}".format(recipient_email, e))
-            else:
-                responses.append("Invalid email address for a candidate")
+            try:
+                mail.send(message)
+                responses.append("Email sent successfully to {}".format(recipient_email))
+                print("Email sent successfully to", recipient_email)
+            except Exception as e:
+                responses.append("Error sending email to {}: {}".format(recipient_email, e))
+                print("Error sending email to {}: {}".format(recipient_email, e))
+        else:
+            responses.append("Invalid email address for a candidate")
 
-        return responses
-    except Exception as e:
-        logging.error(f'Error in "sending email": {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    return responses
 
 @routes_blueprint.route('/send_emails', methods=['POST'])
 @login_required
 def send_emails_route():
-    try:
-        emails = request.form.getlist('emails')
+    emails = request.form.getlist('emails')
 
-        if emails:
-            responses = send_emails(emails)
-            return render_template('results.html', Status='success', Data={'responses': responses})
-        else:
-            return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
-    except Exception as e:
-        logging.error(f'Error in "send_email" route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    if emails:
+        responses = send_emails(emails)
+        return render_template('results.html', Status='success', Data={'responses': responses})
+    else:
+        return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
 
 
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
 def save_hr_input_and_generate_questions():
-    try:
-        # Retrieve HR input data from the form
-        job_description = request.form.get('jobDescription')
-        key_skills = request.form.get('keySkills')
-        job_role = request.form.get('jobRole')
-        required_experience = request.form.get('requiredExperience')
+    data = request.json
 
-        # Save HR input to the database (you may need to adjust this part based on your database model)
-        new_hr_input = HRInput(
-            job_description=job_description,
-            key_skills=key_skills,
-            job_role=job_role,
-            required_experience=required_experience
-        )
+    job_description = data.get('jobDescription')
+    key_skills = data.get('keySkills')
+    job_role = data.get('jobRole')
+    required_experience = data.get('requiredExperience')
 
-        db.session.add(new_hr_input)
+    new_hr_input = HRInput(
+        job_description=job_description,
+        key_skills=key_skills,
+        job_role=job_role,
+        required_experience=required_experience
+    )
+
+    db.session.add(new_hr_input)
+    db.session.commit()
+
+    generated_questions = generate_hr_questions(job_role)
+
+    for question_content in extract_questions(generated_questions):
+        new_question = Question(content=question_content, job_role=job_role)
+        db.session.add(new_question)
         db.session.commit()
 
-        # Generate questions based on the job role
-        generated_questions = generate_hr_questions(job_role)
-        # print(generated_questions)
-
-        # Process and save the generated questions to the database (adjust based on your database model)
-        for question_content in extract_questions(generated_questions):
-            new_question = Question(content=question_content, job_role=job_role)
-            db.session.add(new_question)
-            db.session.commit()
-
-        # Return a response (you may customize this part based on your needs)
-        return 'HR input and questions saved successfully'
-
-    except Exception as e:
-        logging.error(f"Error in 'save_hr_input_and_generate_questions' route: {str(e)}")
-        return render_template('error.html', error='An unexpected error occurred'), 500
-
+    return jsonify({'message': 'HR inputs and questions saved successfully'})
 
 def generate_hr_questions(role):
-    try:
-        test_message = [
-            {"role": "system", "content": "HR Interview Bot generates role-specific questions."},
-            {"role": "user", "content": f"Generate questions for {role} role assume you are HR"}
-        ]
+    test_message = [
+        {"role": "system", "content": "HR Interview Bot generates role-specific questions."},
+        {"role": "user", "content": f"Generate questions for {role} role assume you are HR"}
+    ]
 
-        complete = openai.ChatCompletion.create(
-            model="ft:gpt-3.5-turbo-0613:funnelhq::8XO5lEhK",
-            temperature=1,
-            max_tokens=300,
-            messages=test_message
-        )
+    complete = openai.ChatCompletion.create(
+        model="ft:gpt-3.5-turbo-0613:funnelhq::8XO5lEhK",
+        temperature=1,
+        max_tokens=300,
+        messages=test_message
+    )
 
-        return complete['choices'][0]['text']
-    except Exception as e:
-        logging.error(f"Error in 'generate_hr_questions': {str(e)}")
-        return jsonify({'error': 'An unexpected error occurred'}), 500
+    return complete['choices'][0]['message']['content']
 
 def extract_questions(generated_questions):
-    try:
-        return [q.strip() for q in re.split(r'\n\s*\d+\.\s*', generated_questions) if q.strip()]
-    except Exception as e:
-        logging.error(f"Error in 'extract_questions': {str(e)}")
-        return jsonify({'error': 'An unexpected error occurred'}), 500
+    return [q.strip() for q in re.split(r'\n\s*\d+\.\s*', generated_questions) if q.strip()]
 
 @routes_blueprint.route('/save_questions/<job_role>', methods=['POST'])
 def save_questions(job_role):
-    try:
-        generated_questions = generate_hr_questions(job_role)
+    generated_questions = generate_hr_questions(job_role)
 
-        for question_content in extract_questions(generated_questions):
-            new_question = Question(content=question_content, job_role=job_role)
-            db.session.add(new_question)
-            db.session.commit()
+    for question_content in extract_questions(generated_questions):
+        new_question = Question(content=question_content, job_role=job_role)
+        db.session.add(new_question)
+        db.session.commit()
 
-        return jsonify({'message': f'Questions for {job_role} role saved successfully'})
-    except Exception as e:
-        logging.exception("An error occurred in 'save_questions' route: %s", str(e))
-        return jsonify({'error': 'An unexpected error occurred'}), 500
+    return jsonify({'message': f'Questions for {job_role} role saved successfully'})
 
 @routes_blueprint.route('/get_question/<job_role>', methods=['GET'])
 def get_question(job_role):
-    try:
-        question_id = int(request.args.get('question_id', 1))
+    question_id = int(request.args.get('question_id', 1))
 
-        questions = Question.query.filter_by(job_role=job_role).all()
+    questions = Question.query.filter_by(job_role=job_role).all()
 
-        if questions:
-            if 0 < question_id <= len(questions):
-                question = questions[question_id - 1]
-                return jsonify({'question_id': question_id, 'question': question.content})
-            else:
-                return jsonify({'message': 'No more questions available for this job role'})
+    if questions:
+        if 0 < question_id <= len(questions):
+            question = questions[question_id - 1]
+            return jsonify({'question_id': question_id, 'question': question.content})
         else:
-            return jsonify({'message': 'No questions available for this job role'})
-    except Exception as e:
-        logging.error(f'Error in "get_question" route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+            return jsonify({'message': 'No more questions available for this job role'})
+    else:
+        return jsonify({'message': 'No questions available for this job role'})
 
 @login_required
 @routes_blueprint.route('/submit_response', methods=['POST'])
 def submit_response():
-    try:
-        data = request.json
-        candidate_name = data.get('candidate_name')
-        question_id = data.get('question_id')
-        response = data.get('response')
+    data = request.json
+    candidate_name = data.get('candidate_name')
+    question_id = data.get('question_id')
+    response = data.get('response')
 
-        candidate = Candidate.query.filter_by(name=candidate_name).first()
-        if not candidate:
-            candidate = Candidate(name=candidate_name)
-            db.session.add(candidate)
-            db.session.commit()
-
-        question = Question.query.get(question_id)
-        if not question:
-            return jsonify({'message': 'Question not found'}), 404
-
-        existing_response = CandidateResponse.query.filter_by(
-            candidate_id=candidate.id, question_id=question_id).first()
-        if existing_response:
-            return jsonify({'message': 'Response already exists for this candidate and question'})
-
-        new_response = CandidateResponse(
-            candidate_id=candidate.id,
-            question_id=question_id,
-            response=response
-        )
-
-        db.session.add(new_response)
+    candidate = Candidate.query.filter_by(name=candidate_name).first()
+    if not candidate:
+        candidate = Candidate(name=candidate_name,email=current_user.email)
+        db.session.add(candidate)
         db.session.commit()
 
-        return jsonify({'message': 'Candidate response saved successfully'})
-    except Exception as e:
-        logging.error(f'Error in "get_question" route: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    question = Question.query.get(question_id)
+    if not question:
+        return jsonify({'message': 'Question not found'}), 404
+
+    existing_response = CandidateResponse.query.filter_by(
+        candidate_id=candidate.id, question_id=question_id).first()
+    if existing_response:
+        return jsonify({'message': 'Response already exists for this candidate and question'})
+
+    new_response = CandidateResponse(
+        candidate_id=candidate.id,
+        question_id=question_id,
+        response=response
+    )
+
+    db.session.add(new_response)
+    db.session.commit()
+
+    return jsonify({'message': 'Candidate response saved successfully'})
 
 def get_email(candidate_id):
     try:
@@ -304,61 +235,52 @@ def get_email(candidate_id):
     return None
 
 def find_best_fit_candidates(job_role):
-    try:
-        system_message = "HR Interview Bot analyzes best-fit candidates based on their responses for job matching."
+    system_message = "HR Interview Bot analyzes best-fit candidates based on their responses for job matching."
 
-        hr_input = HRInput.query.filter_by(job_role=job_role).first()
+    hr_input = HRInput.query.filter_by(job_role=job_role).first()
 
-        if not hr_input:
-            return jsonify({'error': 'No HR input found for this role'}), 404
-        key_skills = hr_input.key_skills
-        years_experience = hr_input.required_experience
-        user_message = {
-            "job_title": job_role,
-            "key_skills": key_skills,
-            "years_experience": years_experience
-        }
+    if not hr_input:
+        return jsonify({'error': 'No HR input found for this role'}), 404
 
-        candidate_responses = CandidateResponse.query.join(Question).filter(
-            Question.job_role == job_role
-        ).all()
+    key_skills = hr_input.key_skills
+    years_experience = hr_input.required_experience
 
-        assistant_message = {
-                "candidates": [
-                    {
-                        "candidate_id": response.candidate_id,
-                        "question": response.question.content,
-                        "response": response.response
-                    }
-                    for response in candidate_responses
-                ]
+    user_message = {
+        "job_title": job_role,
+        "key_skills": key_skills,
+        "years_experience": years_experience
+    }
+
+    candidate_responses = CandidateResponse.query.join(Question).filter(
+        Question.job_role == job_role
+    ).all()
+
+    assistant_message = {
+        "candidates": [
+            {
+                "candidate_id": response.candidate_id,
+                "question": response.question.content,
+                "response": response.response
             }
+            for response in candidate_responses
+        ]
+    }
 
-        data = [
-                {"role": "system", "content": system_message},
-                {"role": "user", "content": json.dumps(user_message)},
-                {"role": "assistant", "content": json.dumps(assistant_message)}
-            ]
+    data = [
+        {"role": "system", "content": system_message},
+        {"role": "user", "content": json.dumps(user_message)},
+        {"role": "assistant", "content": json.dumps(assistant_message)}
+    ]
 
-        model_response = openai.ChatCompletion.create(
-                model="ft:gpt-3.5-turbo-0613:funnelhq::8c5QTXcf",
-                messages=data,
-                temperature=1,
-                max_tokens=2000
-            )
+    model_response = openai.ChatCompletion.create(
+        model="ft:gpt-3.5-turbo-0613:funnelhq::8psZjis3",
+        messages=data,
+        temperature=1,
+        max_tokens=2000
+    )
 
-        model_response = openai.ChatCompletion.create(
-            model="ft:gpt-3.5-turbo-0613:funnelhq::8psZjis3",
-            messages=data,
-            temperature=1,
-            max_tokens=2000
-        )
-
-        best_fit_candidates = model_response['choices'][0]['message']['content']
-        return best_fit_candidates
-    except Exception as e:
-        logging.error(f'Error in "find_best_fit_candidate" function: {str(e)}')
-        flash('An error occurred. Please try again later.', 'danger')
+    best_fit_candidates = model_response['choices'][0]['message']['content']
+    return best_fit_candidates
 
 @routes_blueprint.route('/get_best_fit_candidates/<job_role>', methods=['GET'])
 def get_best_fit_candidates(job_role):

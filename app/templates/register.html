@@ -15,37 +15,37 @@
           </div>
         </div>
       <div class="s_left">
-        <div style="display: flex; flex-direction: column;align-items: center;">
-            <h2 style="font-size: 50px; color: #2C2C2C;">Sign Up</h2>
-            <p style="color:#4C4C4C">Fill the details to create your account</p>
+        <div class="s_left_title">
+            <h2 class="s_left_title_heading">Sign Up</h2>
+            <p class="s_left_title_desc">Fill the details to create your account</p>
         </div>
         <form class="s_form" action="{{ url_for('routes.register') }}" method="POST">
             <div class="s_email">
-                <label style="font-weight: bold;" for="email">Email:</label>
+                <label class="s_email_label" for="email">Email:</label>
                 <input class="s_input" type="email" name="email" required>
             </div>
             <div class="s_password">
-                <label style="font-weight: bold;" for="password">Password:</label>
+                <label class="s_email_label" for="password">Password:</label>
                 <input class="s_input" type="password" name="password" required>
             </div>
             <div class="s_email">
-                <label style="font-weight: bold;" for="name">Name:</label>
+                <label class="s_email_label" for="name">Name:</label>
                 <input class="s_input" type="text" name="name" required>
             </div>
             <div class="s_email">
-                <label style="font-weight: bold;" for="role">Select Role:</label>
-                <select class="s_input" style="width: 540px;height: 45px;" name="role" id="role" onchange="toggleJobRoleField()">
+                <label class="s_email_label" for="role">Select Role:</label>
+                <select class="s_input s_select" style="height: 40px; width: 538px;" name="role" id="role" onchange="toggleJobRoleField()">
                     <option value="candidate">Candidate</option>
                     <option value="hr">HR</option>
                 </select>
             </div>
             <div id="appliedJobRoleField" class="s_email">
-                <label style="font-weight: bold;" for="applied_job_role">Applied Job Role:</label>
+                <label class="s_email_label" for="applied_job_role">Applied Job Role:</label>
                 <input class="s_input" type="text" name="applied_job_role" required>
             </div>
-            <div style="display: flex;width: 90%; justify-content: space-between;align-items: center;">
-                <span style="display: flex;align-items: center; gap: 5px;"><input type="checkbox" name="" id=""> Remember me</span>
-                <a style="text-decoration: none;" href="">Forgot Password?</a>
+            <div class="s_reminder">
+                <span class="l_reminder_left"><input type="checkbox" name="" id=""> Remember me</span>
+                <a class="l_reminder_right" href="">Forgot Password?</a>
               </div>
             <script>
                 // Set the initial state of the appliedJobRoleField
@@ -62,7 +62,7 @@
         </form>
         <div>
           <span>Already have an account?  </span
-            ><a href="{{ url_for('routes.login') }}" style="text-decoration: none; font-weight: bold;color: #323782;"
+            ><a class="s_down_login" href="{{ url_for('routes.login') }}"
             >LogIn</a
             >
           </div>

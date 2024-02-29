@@ -20,6 +20,38 @@
     /* background-color: yellow; */
 }
 
+.l_left_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.l_left_title_heading{
+    font-size: 50px;
+    color: #2C2C2C;
+}
+
+.l_left_title_desc{
+    color:#4C4C4C
+}
+
+.l_reminder{
+    display: flex;width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.l_reminder_left{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.l_reminder_right{
+    text-decoration: none;
+}
+
 .l_form{
     /* background-color: red; */
     width: 90%;
@@ -161,4 +193,10 @@
 .form-label{
     color:#2C2C2C;
     font-weight: bold;
+}
+
+.l_down_signup{
+    text-decoration: none;
+    font-weight: bold;
+    color: #323782
 }

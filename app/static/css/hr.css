@@ -20,6 +20,9 @@ html{
     width: 100vw;
 }
 
+.hr_title{
+    margin-bottom: 20px;
+}
 
 .s_left{
     flex: 1;
@@ -60,12 +63,26 @@ html{
 .s_input{
     height: 20px;
     width: 100%;
-    padding: 15px;
+    padding: 15px 5px;
     border: none;
     outline: none;
     border-radius: 5px;
     border: 2px solid #D9D7D7;
     flex: 1;
+    font-size: 20px;
+}
+
+.s_textarea{
+    height: 80px;
+    width: 100%;
+    padding: 15px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #D9D7D7;
+    flex: 1;
+    font-size: 20px;
+
 }
 
 .s_input_container{

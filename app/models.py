@@ -24,18 +24,6 @@ class Candidate(db.Model):
     email = db.Column(db.String(100), unique=True, nullable=False, default=str(uuid.uuid4()))  # Use email as UUID
     name = db.Column(db.String(100))
     responses = db.relationship('CandidateResponse', backref='candidate', lazy=True)
-    resume_path = db.Column(db.String(255))
-    skillset = db.Column(db.String(255))
-    linkedin_url = db.Column(db.String(255))
-    github_link = db.Column(db.String(255))
-    twitter_link = db.Column(db.String(255))
-    portfolio_link = db.Column(db.String(255))
-    profile_picture_filename = db.Column(db.String(255))
-
-
-    def __repr__(self):
-        return f"{self.id} - {self.username}"
-    
 
     def __init__(self, email, name):
         self.email = email

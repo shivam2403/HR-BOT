@@ -11,21 +11,33 @@ html{
     position: relative;
 }
 
+.home{
+    margin: 20px 40px;
+}
+
+.user_info_input{
+    font-size: 30px;
+}
+
 .d_title{
     font-size: 45px;
     margin-bottom: 20px;
-    margin-left: 40px;
+    /* margin-left: 40px; */
 }
 
 .d_question_showcase{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     margin-top: 50px;
 }
 
 .user_info{
-    margin-left: 50px;
+    /* margin-left: 50px; */
     font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
+
 
 .role{
     display: flex;
@@ -61,6 +73,41 @@ html{
     cursor: pointer;
     color: white;
     background-color: #323782;
+    margin-top: 10px;
+}
+
+.q_container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.showcase_title{
+    font-size: 40px;
+}
+
+.q_down{
+    margin-top: 40px;
+}
+
+.response_textarea{
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 22px;
+}
+
+.interview_text{
+    color: #323782;
+}
+
+.title_text{
+    color: #323782;
+    font-weight: bold;
+}
+
+.q_text{
+    font-size: 22px;
 }
 
 .nav{
@@ -99,6 +146,21 @@ html{
     margin-bottom: -3px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.nav_title{
+    font-size: 40px;
+}
+
+.nav_title_prefix{
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav_right{
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .d_ul{
