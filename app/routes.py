@@ -7,78 +7,84 @@ import re
 from flask_mail import *
 from .extensions import mail
 
+
 routes_blueprint = Blueprint('routes', __name__)
 
 @routes_blueprint.route('/')
 def home():
-    return render_template('index.html')
+    return redirect('/')
 
 @routes_blueprint.route('/protected')
 @login_required
 def protected():
     return 'This is a protected route.'
 
-@routes_blueprint.route('/login', methods=['GET', 'POST'])
+
+@routes_blueprint.route('/login', methods=['POST'])
 def login():
     if request.method == 'POST':
-        email = request.form['email']
-        password = request.form['password']
-        
-        user = User.query.filter_by(email=email).first()
+        try:
+            data = request.get_json()
+            email = data.get('email')
+            password = data.get('password')
 
-        if user and user.check_password(password):
-            login_user(user)
-            flash('Login successful!', 'success')
-            return redirect(url_for('routes.home'))
-        else:
-            flash('Login failed. Check your email and password.', 'danger')
+            user = User.query.filter_by(email=email).first()
 
-    return render_template('login.html')
+            if user and user.check_password(password):
+                login_user(user)
+                return jsonify({'message': 'Login successful', 'user': {
+                    'id': user.id,
+                    'email': user.email,
+                    'name': user.name,
+                    'applied_job_role': user.applied_job_role,
+                }, 'redirect': url_for('routes.home')})
 
-@routes_blueprint.route('/register', methods=['GET', 'POST'])
+            return jsonify({'message': 'Login failed. Check your email and password.'}), 401
+
+        except Exception as e:
+            return jsonify({'message': f'Error: {str(e)}'}), 500
+
+
+@routes_blueprint.route('/register', methods=['POST'])
 def register():
     if request.method == 'POST':
         try:
-            email = request.form['email']
-            password = request.form['password']
-            name = request.form['name']
-            role = request.form['role']
-            applied_job_role = request.form.get('applied_job_role')
+            email = request.json['email']
+            password = request.json['password']
+            name = request.json['name']
+            role = request.json['role']
+            applied_job_role = request.json.get('applied_job_role')
 
             existing_user = User.query.filter_by(email=email).first()
 
             if existing_user:
-                flash('Email already exists. Choose a different one.', 'danger')
-            else:
-                # Create a new user
-                new_user = User(email=email, name=name, applied_job_role=applied_job_role, user_type=role)
-                new_user.set_password(password)
-                db.session.add(new_user)
-                db.session.commit()
+                return jsonify({'message': 'Email already exists. Choose a different one.'}, 400)
 
-                flash('Registration successful! You can now log in.', 'success')
+            # Create a new user
+            new_user = User(email=email, name=name, applied_job_role=applied_job_role, user_type=role)
+            new_user.set_password(password)
+            db.session.add(new_user)
+            db.session.commit()
 
-                # Create a new candidate associated with the registered user
-                new_candidate = Candidate(name=name, email=email)
-                db.session.add(new_candidate)
-                db.session.commit()
+            # Create a new candidate associated with the registered user
+            new_candidate = Candidate(name=name, email=email)
+            db.session.add(new_candidate)
+            db.session.commit()
 
-                return redirect(url_for('routes.login'))
+            return jsonify({'message': 'Registration successful! You can now log in.'})
+
         except Exception as e:
-            flash(f'Registration failed. Error: {str(e)}', 'danger')
+            return jsonify({'message': f'Registration failed. Error: {str(e)}'}, 500)
 
-    return render_template('register.html')
+    # Return an error response if the request method is not POST
+    return jsonify({'message': 'Invalid request method'}, 405)
 
-@routes_blueprint.route('/logout')
-@login_required
-def logout():
-    logout_user()
-    flash('Logout successful!', 'success')
-    return redirect(url_for('routes.login'))
+
 
 @routes_blueprint.route('/hr')
 def index():
-    return render_template('hr.html')
+    return redirect('/hr')
+
 
 def send_emails(emails):
     responses = []
@@ -104,6 +110,7 @@ def send_emails(emails):
 
     return responses
 
+
 @routes_blueprint.route('/send_emails', methods=['POST'])
 @login_required
 def send_emails_route():
@@ -114,6 +121,23 @@ def send_emails_route():
         return render_template('results.html', Status='success', Data={'responses': responses})
     else:
         return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
+
+
+# @routes_blueprint.route('/send_emails', methods=['POST'])
+# @login_required
+# def send_emails_route():
+#     try:
+#         data = request.get_json()
+#         emails = data.get('emails', [])
+
+#         if emails:
+#             responses = send_emails(emails)
+#             return jsonify({'Status': 'success', 'Data': {'responses': responses}})
+#         else:
+#             return jsonify({'Status': 'error', 'Data': {'error_message': 'No emails provided'}})
+
+#     except Exception as e:
+#         return jsonify({'Status': 'error', 'Data': {'error_message': str(e)}})
 
 
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])

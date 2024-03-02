@@ -6,6 +6,9 @@ from .routes import routes_blueprint
 from .models import db, User
 import os
 from .extensions import db, login_manager, mail
+from flask_cors import CORS
+
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -13,6 +16,7 @@ def load_user(user_id):
 
 def create_app():
     app = Flask(__name__, template_folder='templates')
+    CORS(app, resources={r"/*": {"origins": "http://localhost:3000"}})
 
     load_dotenv()
     current_folder = os.path.abspath(os.path.dirname(__file__))
