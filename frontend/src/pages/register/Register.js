@@ -34,11 +34,9 @@ const Register = () => {
       });
 
       if (response.ok) {
-        // Handle successful registration
         console.log('Registration successful');
         navigate('/login')
       } else {
-        // Handle registration failure
         const errorData = await response.json();
         console.error(errorData.message);
       }

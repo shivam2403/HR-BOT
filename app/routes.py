@@ -111,33 +111,34 @@ def send_emails(emails):
     return responses
 
 
-@routes_blueprint.route('/send_emails', methods=['POST'])
-@login_required
-def send_emails_route():
-    emails = request.form.getlist('emails')
-
-    if emails:
-        responses = send_emails(emails)
-        return render_template('results.html', Status='success', Data={'responses': responses})
-    else:
-        return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
-
-
 # @routes_blueprint.route('/send_emails', methods=['POST'])
 # @login_required
 # def send_emails_route():
-#     try:
-#         data = request.get_json()
-#         emails = data.get('emails', [])
+#     emails = request.form.getlist('emails')
 
-#         if emails:
-#             responses = send_emails(emails)
-#             return jsonify({'Status': 'success', 'Data': {'responses': responses}})
-#         else:
-#             return jsonify({'Status': 'error', 'Data': {'error_message': 'No emails provided'}})
+#     if emails:
+#         responses = send_emails(emails)
+#         return render_template('results.html', Status='success', Data={'responses': responses})
+#     else:
+#         return render_template('results.html', Status='error', Data={'error_message': 'No emails provided'})
 
-#     except Exception as e:
-#         return jsonify({'Status': 'error', 'Data': {'error_message': str(e)}})
+
+@routes_blueprint.route('/send_emails', methods=['POST'])
+@login_required
+def send_emails_route():
+    print('hhh')
+    try:
+        data = request.get_json()
+        emails = data.get('emails', [])
+
+        if emails:
+            responses = send_emails(emails)
+            return jsonify({'Status': 'success', 'Data': {'responses': responses}})
+        else:
+            return jsonify({'Status': 'error', 'Data': {'error_message': 'No emails provided'}})
+
+    except Exception as e:
+        return jsonify({'Status': 'error', 'Data': {'error_message': str(e)}})
 
 
 @routes_blueprint.route('/save_hr_input_and_generate_questions', methods=['POST'])
@@ -306,6 +307,7 @@ def find_best_fit_candidates(job_role):
     best_fit_candidates = model_response['choices'][0]['message']['content']
     return best_fit_candidates
 
+
 @routes_blueprint.route('/get_best_fit_candidates/<job_role>', methods=['GET'])
 def get_best_fit_candidates(job_role):
     try:
@@ -329,16 +331,23 @@ def get_best_fit_candidates(job_role):
 
             refined_data = {'best_fit_candidates': refined_candidates}
 
-            return render_template('results.html', Status='success', Data=refined_data)
+            return jsonify({'Status': 'success', 'Data': refined_data})
+            # return render_template('results.html', Status='success', Data=refined_data)
         else:
-            return render_template('results.html', Status='error', Data=None)
+            data={'best_fit_candidates': []}
+            return jsonify({'Status': 'error','Data':data})
+            # return render_template('results.html', Status='error', Data=None)
 
     except json.JSONDecodeError as e:
         # Handle JSON decoding error
+        data={'best_fit_candidates': []}
         error_message = f"Error decoding JSON: {str(e)}"
-        return render_template('results.html', Status='error', Data={'error_message': error_message})
+        return jsonify({'Status': 'error','Data':data})
+        # return render_template('results.html', Status='error', Data={'error_message': error_message})
 
     except Exception as e:
         # Handle other unexpected errors
+        data={'best_fit_candidates': []}
         error_message = f"An unexpected error occurred: {str(e)}"
-        return render_template('results.html', Status='error', Data={'error_message': error_message})
+        return jsonify({'Status': 'error','Data':data})
+        # return render_template('results.html', Status='error', Data={'error_message': error_message})

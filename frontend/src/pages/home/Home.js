@@ -1,5 +1,5 @@
 import React, { useState, useContext } from 'react';
-import './home.css'; // Update the path
+import './home.css';
 import { useUser } from '../../context/UserContext';
 import { useNavigate } from 'react-router-dom';
 
@@ -45,7 +45,7 @@ const Home = () => {
     })
       .then(response => response.json())
       .then(data => {
-        // Handle response data if needed
+        
       })
       .catch(error => {
         console.error('Error:', error);

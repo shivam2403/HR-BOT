@@ -5,6 +5,7 @@ import Register from './pages/register/Register';
 import { UserProvider } from './context/UserContext';
 import Home from './pages/home/Home';
 import HR from './pages/hr/Hr';
+import Results from './pages/results/Results';
 
 const router=createBrowserRouter([
   {
@@ -23,7 +24,12 @@ const router=createBrowserRouter([
     path:'/hr',
     element:<HR/>
   },
+  {
+    path:'/get_best_fit_candidates/:job_role',
+    element:<Results/>
+  },
 ])
+
 
 function App() {
   return (

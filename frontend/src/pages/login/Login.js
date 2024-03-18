@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { useUser } from '../../context/UserContext';
 import './login.css'
-import { Link } from 'react-router-dom'; // Make sure to import Link if you're using React Router
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import 'boxicons'
 
@@ -14,7 +14,6 @@ const Login = () => {
     const navigate=useNavigate();
 
     const handleLogin = async () => {
-        console.log('h')
         try {
           const response = await fetch('http://localhost:5000/login', {
             method: 'POST',
@@ -27,9 +26,7 @@ const Login = () => {
           console.log('i')
           if (response.ok) {
             const data = await response.json();
-            // Store user data in your state management system (Redux, Context, etc.)
             loginUser(data.user);
-            console.log(data.user);
             navigate('/')
           } else {
             const errorData = await response.json();
