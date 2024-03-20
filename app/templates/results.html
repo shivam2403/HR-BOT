@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Results</title>
+</head>
+
+<body>
+
+    {% if Status == 'success' %}
+        <h1>Best Fit Candidates</h1>
+        <h2>{{ Data }}</h2>
+        <table border="1">
+            <tr>
+                <th>Candidate ID</th>
+                <th>Email</th>
+                <th>Fit Score</th>
+            </tr>
+            {% for candidate in Data['best_fit_candidates'] %}
+                <tr>
+                    <td>{{ candidate['candidate_id'] }}</td>
+                    <td>{{ candidate['email'] }}</td>
+                    <td>{{ candidate['fit_score'] }}</td>
+                </tr>
+            {% endfor %}
+        </table>
+        <form action="{{ url_for('routes.send_emails_route') }}" method="post">
+            {% for candidate in Data['best_fit_candidates'] %}
+                <input type="hidden" name="emails" value="{{ candidate['email'] }}">
+            {% endfor %}
+            <input type="hidden" name="job_role" value="{{ Data.job_role }}">  <!-- Assuming Data contains job_role -->
+            <input type="submit" value="Send Emails">
+        </form>
+    {% else %}
+        <p style="color: red;">An error occurred: {{ error_message }}</p>
+    {% endif %}
+
+</body>
+
+</html>

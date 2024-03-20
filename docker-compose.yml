@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    ports:
+      - "5000:5000"
+    environment:
+      OPENAI_API_KEY: ''
+      SECRET_KEY: 'my-secret-key'
+      DATABASE_URI: 'sqlite:////app/instance/questionaire1.db'  
+    command: flask run --host=0.0.0.0 --port=5000
+
+volumes:
+  pgdata:  # Removed the PostgreSQL data volume
