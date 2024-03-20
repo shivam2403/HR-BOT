@@ -2,18 +2,20 @@
 FROM node:18-alpine
 
 # set working directory
-WORKDIR /usr/src/
+WORKDIR /usr/src/frontend
 
-# add `/usr/src/app/node_modules/.bin` to $PATH
+# add `/usr/src/frontend/node_modules/.bin` to $PATH
 ENV PATH /usr/src/frontend/node_modules/.bin:$PATH
 
 # install and cache app dependencies
 COPY package.json .
 COPY package-lock.json .
-COPY src .
-COPY public .
-RUN npm ci
-RUN npm install react-scripts@5.0.1 -g --silent
+
+# install dependencies
+RUN npm install
+
+# Copy the entire frontend directory into the working directory
+COPY . .
 
 # start app
 CMD ["npm", "start"]
