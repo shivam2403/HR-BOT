@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    min-height: 100vh;
+    background-color: rgb(238, 238, 238);
+    position: relative;
+}
+
+.hr{
+    display: flex;
+    margin-top: 60px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+}
+
+.hr_title{
+    margin-bottom: 20px;
+}
+
+.s_left{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.s_form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    width: 50%;
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.s_password{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    font-size: 22px;
+    gap: 5px;
+}
+
+.s_email{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    width: 90%;
+}
+
+.s_input{
+    height: 20px;
+    width: 100%;
+    padding: 15px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #D9D7D7;
+    flex: 1;
+    font-size: 20px;
+}
+
+.s_textarea{
+    height: 80px;
+    width: 100%;
+    padding: 15px 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid #D9D7D7;
+    flex: 1;
+    font-size: 20px;
+
+}
+
+.s_input_container{
+    flex: 1;
+}
+
+.s_label{
+    flex: 1;
+}
+
+
+.s_btn{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    width: 100%;
+    background-color: #323782;
+}
+
+.s_google_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    gap: 10px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 8px;
+    color: black;
+    transition: 0.3s ease-in;
+}
+
+.s_google_btn:hover{
+    background-color: #323782;
+    color: white;
+    border: none;
+}
+
+.s_right{
+    background: url('https://www.clker.com/cliparts/5/4/8/a/12401655391311375203boobaloo_Chemistry_Conical_Funnel.svg.hi.png');
+    background-color: rgba(128, 128, 128, 0.5);
+    flex: 1;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.s_right_title{
+    font-size: 60px;
+    margin-left: 30px;
+    color: black;
+    
+}
+
+.s_right_hr{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 100px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.s_right_hr_title{
+    font-size: 60px;
+    color: whitesmoke;
+}
+
+.s_right_hr_desc{
+    font-size: 20px;
+}
+
+.s_signup{
+    padding: 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    background-color: white;
+    color: black;
+    padding: 0 40px;
+    /* box-shadow: 0 4px 8px rgba(0,0,0,.16); */
+    position: sticky;
+    top: 0;
+}
+
+.scrolled {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.16);
+    transition: box-shadow 0.3s ease;
+}
+
+.btn{
+    padding: 5px 10px;
+    font-size: 18px;
+    border-radius: 10px;
+    max-width: 200px;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color: #323782;
+}
+
+.nav_img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-bottom: -3px;
+    border-radius: 50%;
+    object-fit: cover;
+}

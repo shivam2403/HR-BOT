@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HR bot - My Profile</title>
+    <link rel="stylesheet" href="../static/css/profile.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      integrity="sha384-ha2zgXys1DHJ5jbG45t2iZ05e+U5G2ODf+9a7Yzblm/Z0ZGGEnqRM1xazv7Ic98U"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="profile">
+      <div class="nav">
+        <h1 style="font-size: 40px">
+          <a style="text-decoration: none; color: inherit" href="/"
+            >Funnel<span style="color: #2bbe60; font-weight: bold">HQ</span></a
+          >
+        </h1>
+        <div style="display: flex; align-items: center; gap: 20px">
+          <a href="/google_logout"><button class="btn">Logout</button></a>
+          <a href="/profile/{{ user.id }}"
+            >
+            {% if user.profile_picture_filename and user.profile_picture_filename|length > 10 %}
+              <span class="true" style="display: none;">True</span>
+              <img class="nav_img" src="../static/{{ user.profile_picture_filename }}" alt="">
+            {% else %}
+              <span class="true" style="display: none;">False</span>
+              <img class="nav_img" src="https://www.iconpacks.net/icons/2/free-user-icon-3296-thumb.png" alt="">
+            {% endif %}
+        </a>
+        </div>
+      </div>
+      <div class="profile_down">
+        <div class="p_title">
+          <div style="display: flex;flex-direction: column; margin-top: 20px;" class="p_title_left">
+
+            <!-- Updated form for profile picture upload -->
+            <div style="display: flex; align-items: center;gap: 20px;">
+
+              <form
+              class="p_down_d_form"
+              method="POST"
+              action="{{ url_for('routes.upload_profile_picture', user_id=user.id) }}"
+              enctype="multipart/form-data"
+              >
+              <!-- <label style="font-size: 20px; font-weight: bold;" for="profile_picture">Upload Profile Picture:</label> -->
+              <div class="nav_img_container" onclick="triggerProfilePictureUpload()">
+                {% if user.profile_picture_filename and user.profile_picture_filename|length > 10 %}
+                <img class="nav_img profile_img nav_img_hover" style="width: 80px;height: 80px;border-radius: 50%;object-fit: cover;" id="profilePictureDisplay" src="../static/{{ user.profile_picture_filename }}" alt="">
+            {% else %}
+                <img class="nav_img profile_img" style="width: 80px;height: 80px;border-radius: 50%;object-fit: cover;" id="profilePictureDisplay" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UIcnFKmDk4ttzi_EKfjX41UsWdK72vfVA3326kll7HgwJ-LBKTqwNQSSPbrW4gilmf0&usqp=CAU" alt="">
+            {% endif %}
+                <!-- Hidden file input of profile picture -->
+                <input type="file" id="profilePictureInput" name="profile_picture" accept="image/*" style="display: none">
+                {%if user.profile_picture_filename%}
+                <span class="camera"><img style="height: 50px;width: 50px; border-radius: 50%; cursor: pointer;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1UIcnFKmDk4ttzi_EKfjX41UsWdK72vfVA3326kll7HgwJ-LBKTqwNQSSPbrW4gilmf0&usqp=CAU" alt=""></span>
+                {% endif %}
+              </div>
+            </form>
+            <h1 class="p_left_info">
+              <span>{{ user.username }}</span>
+            </h1>
+          </div>
+          {% if user.profile_picture_filename%}
+              <a href="/remove_profile_image" style="color: rgb(254, 77, 77);margin-left: 8px;;">Remove</a>
+          {% endif %}
+          <button class="btn" style="margin-top: 20px; display: none;" type="button" onclick="uploadProfilePicture()">Upload</button>
+        </div>
+          <div class="p_title_right">
+            <div style="width: 80%;margin-left: auto; margin-right: auto; background-color: white;border-radius: 10px;">
+              <div id="progress_bar" style="background-color: #4ee686; color: #4ee686; border-radius: 10px;">.</div>
+            </div>
+            <span style="margin-left: 62px; margin-top: 10px; font-size: 20px;" id="progress_bar_percent"></span>
+          </div>
+          </div>
+
+        <!-- Display user profile information -->
+        <div class="p_down_u">
+          <div class="p_left">
+            <div>
+              Email:
+              <span >{{ user.email }}</span>
+            </div>
+            <div>
+              Phone:
+              <span >{{ user.phone }}</span>
+            </div>
+            <div class="p_down_d">
+              <form
+                class="p_down_d_form"
+                method="POST"
+                action="{{ url_for('routes.upload_resume', user_id=user.id) }}"
+                enctype="multipart/form-data"
+              >
+                <label style="font-size: 50px;font-weight: bold;" for="resume">Upload Resume:</label>
+                <input
+                  type="file"
+                  name="resume"
+                  id="resumeInput"
+                  accept=".pdf"
+                  required
+                  value="{{ resume_input_value }}"
+                />
+                <button class="btn" style="margin-top: 20px;" type="submit">⬆ Upload</button>
+              </form>
+    
+              {% with messages = get_flashed_messages(with_categories=true) %} {% if
+              messages %} {% for category, message in messages %}
+              <div class="flash-message {{ category }}">{{ message }}</div>
+              {% endfor %} {% endif %} {% endwith %} {% if user.resume_path %}
+              <p style="font-size: 24px; font-weight: bold; margin-top: 15px;">
+                Resume:
+                <a class="resumeLink"
+                  href="{{ url_for('routes.get_resume', filename=user.resume_path) }}"
+                  target="_blank"
+                  download
+                  data-resume-path="{{ user.resume_path }}"
+                >Download Resume</a>
+              </p>
+              <button class="btn" style="background-color: rgb(255, 70, 70);" onclick="removeResume()">Remove</button>
+              {% endif %}
+            </div>
+          </div>
+
+          <div class="p_right">
+            <div class="p_k_v">
+              <span class="p_key"><img style="background-color: transparent;" class="p_key_img" src="https://freeiconshop.com/wp-content/uploads/edd/code-solid.png" alt="">Skillset: </span>
+              <span class="p_value">
+                {{ user.skillset }}
+              </span>
+            </div>
+            <div class="p_k_v">
+              <span class="p_key"><img class="p_key_img" src="https://www.pagetraffic.com/blog/wp-content/uploads/2022/09/linkedin-black-logo-icon.png" alt="">LinkedIn:</span>
+              <a style="text-decoration: none; color: inherit;" class="p_value" href="{{user.linkedin_url}}" target="/"><span id="linkedin_username"></span></a>
+            </div>
+            <div class="p_k_v">
+              <span class="p_key"><img class="p_key_img" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">Github:</span>
+              <a style="text-decoration: none; color: inherit;" class="p_value"  href="{{ user.github_link }}" target="/"><span id="github_username"></span></a>
+            </div>
+            <div class="p_k_v">
+              <span class="p_key"><img class="p_key_img" src="https://cdn-icons-png.flaticon.com/512/60/60580.png" alt="">Twitter:</span>
+              <a style="text-decoration: none; color: inherit;" class="p_value" href="{{user.twitter_link}}" target="/"><span id="twitter_username"></span></a>
+            </div>
+            <div class="p_k_v">
+              <span class="p_key"><img class="p_key_img" src="https://www.shareicon.net/data/512x512/2015/11/11/670475_tool_512x512.png" alt="">Portfolio:</span>
+              <a style="text-decoration: none; color: inherit;" class="p_value"  target="/" href="{{ user.portfolio_link }}">
+                <span >
+                    {% if user.portfolio_link != "None" and user.portfolio_link != "" and user.portfolio_link != "none" %}
+                        My Portfolio
+                    {% else %}
+                        None
+                    {% endif %}
+                </span>
+            </a>
+            </div>
+
+            <!-- Edit button to trigger the editing form -->
+            {% if user and user.email == session.get('google_id') %}
+            <button class="btn" style="margin-top: 20px;" onclick="openEditModal()">Edit Profile</button>
+            {% endif %}
+          </div>
+        </div>
+
+        
+
+        <!-- Modal -->
+        <div id="editModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeEditModal()">&times;</span>
+            <h2 style="font-size: 40px;">Edit <span style="color: #2bbe60;">Profile</span></h2>
+            <!-- Form to update profile information -->
+            <form
+              class="p_edit_form"
+              action="{{ url_for('routes.user_profile', user_id=user.id) }}"
+              method="POST"
+            >
+              <!-- Skillset -->
+              <label for="skillset">Skillset:</label>
+              <input
+                type="text"
+                id="skillset"
+                name="skillset"
+                value="{{ user.skillset }}"
+              /><br />
+
+              <!-- LinkedIn URL -->
+              <label for="linkedin_url">LinkedIn URL:</label>
+              <input
+                type="text"
+                id="linkedin_url"
+                name="linkedin_url"
+                value="{{ user.linkedin_url }}"
+                oninput="displayUsername('linkedin_username', extractUsernameFromLinkedInURL(this.value))"
+              />
+
+              <!-- GitHub Link -->
+              <label for="github_link">GitHub Link:</label>
+              <input
+                type="text"
+                id="github_link"
+                name="github_link"
+                value="{{ user.github_link }}"
+                oninput="displayUsername('github_username', extractUsernameFromURL(this.value))"
+              />
+
+              <!-- Twitter Link -->
+              <label for="twitter_link">Twitter Link:</label>
+              <input
+                type="text"
+                id="twitter_link"
+                name="twitter_link"
+                value="{{ user.twitter_link }}"
+                oninput="displayUsername('twitter_username', extractUsernameFromURL(this.value))"
+              />
+
+              <!-- Portfolio Link -->
+              <label for="portfolio_link">Portfolio Link:</label>
+              <input
+                type="text"
+                id="portfolio_link"
+                name="portfolio_link"
+                value="{{ user.portfolio_link }}"
+              /><br />
+
+              <!-- Submit button -->
+              <input class="btn" type="submit" value="Update Profile" />
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+
+      // Handling opening and closing the modal
+      function openEditModal() {
+        document.getElementById("editModal").style.display = "block";
+      }
+
+      function closeEditModal() {
+        document.getElementById("editModal").style.display = "none";
+      }
+
+      // Close the modal if the user clicks outside of it
+      window.onclick = function (event) {
+        var modal = document.getElementById("editModal");
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+
+      function persistFileInput() {
+        var fileInput = document.getElementById("resumeInput");
+        if (sessionStorage.getItem("resumeInputValue")) {
+          fileInput.value = sessionStorage.getItem("resumeInputValue");
+        }
+        fileInput.addEventListener("change", function () {
+          sessionStorage.setItem("resumeInputValue", this.value);
+        });
+      }
+
+      // Call the function when the page is loaded
+      window.addEventListener("load", persistFileInput);
+
+
+      // For box-shadowing purposes
+      document.addEventListener("DOMContentLoaded", function () {
+        var nav = document.querySelector(".nav");
+
+        window.addEventListener("scroll", function () {
+          if (window.scrollY > 0) {
+            nav.classList.add("scrolled");
+          } else {
+            nav.classList.remove("scrolled");
+          }
+        });
+      });
+
+      function extractUsernameFromURL(url) {
+        var match;
+
+
+        // Retrieving usernames from different url's 
+        // GitHub format
+        match = url.match(/\/([^\/]+)$/);
+        if (match) {
+            return match[1];
+        }
+
+        // Twitter format
+        match = url.match(/\/([^\/]+)$/);
+        if (match) {
+            return match[1];
+        }
+
+        // LinkedIn format
+        match = url.match(/\/in\/([^\/]+)/);
+        if (match) {
+            return match[1];
+        }
+
+        return url;
+    }
+
+
+    // Function to display username in a specified element
+    function displayUsername(elementId, url) {
+        var username = extractUsernameFromURL(url);
+        var usernameElement = document.getElementById(elementId);
+        usernameElement.textContent = username;
+    }
+
+    // Call the displayUsername function for each social media link
+    window.addEventListener("load", function () {
+        displayUsername("github_username", "{{ user.github_link }}");
+        displayUsername("twitter_username", "{{ user.twitter_link }}");
+        displayUsername("linkedin_username", "{{ user.linkedin_url }}");
+    });
+
+
+
+    // progress bar for profile completion
+    document.addEventListener("DOMContentLoaded", function () {
+
+    // Function to update progress bar
+    function updateProgressBar() {
+      var num = 0;
+
+      // Fetch input values inside the event listener
+      var skillset_input = document.getElementById("skillset").value;
+      var linkedin_input = document.getElementById("linkedin_url").value;
+      var github_input = document.getElementById("github_link").value;
+      var twitter_input = document.getElementById("twitter_link").value;
+      var portfolio_input = document.getElementById("portfolio_link").value;
+      var resume_input = document.getElementById("resumeInput");
+      var resumeLink = document.querySelector(".resumeLink");
+      var resumePath = resumeLink?.getAttribute("data-resume-path");
+      var isImage = document.querySelector(".true").innerText;
+            
+      // Update num based on input values
+      if (skillset_input && skillset_input.trim() !== "None" && skillset_input.trim() !== "" && skillset_input.trim() !== "none") num++;
+      if (linkedin_input && linkedin_input.trim() !== "None" && linkedin_input.trim() !== "" && linkedin_input.trim() !== "none") num++;
+      if (github_input && github_input.trim() !== "None" && github_input.trim() !== "" && github_input.trim() !== "none") num++;
+      if (twitter_input && twitter_input.trim() !== "None" && twitter_input.trim() !== "" && twitter_input.trim() !== "none") num++;
+      if (portfolio_input && portfolio_input.trim() !== "None" && portfolio_input.trim() !== "" && portfolio_input.trim() !== "none") num++;
+            
+      if(resumePath?.length)num++;
+      if (isImage && isImage === 'True') num++;
+
+            
+      // Update progress bar width
+      var progressbar = document.getElementById("progress_bar");
+      progressbar.style.width = ((num / 7) * 100) + "%";
+
+      // Update progress bar percent text
+      var progressbarPercent = document.getElementById("progress_bar_percent");
+      progressbarPercent.textContent = "Profile Completion: " + Math.round((num / 7) * 100)+"%";
+}
+
+      // Call the function when the page is loaded
+      updateProgressBar();
+
+      // Event listeners for input elements
+      ["skillset", "linkedin_url", "github_link", "twitter_link", "portfolio_link"].forEach(function (elementId) {
+          var inputElement = document.getElementById(elementId);
+          if (inputElement) {
+              inputElement.addEventListener("input", updateProgressBar);
+          }
+      });
+
+    });
+
+
+
+    function removeResume() {
+      // Use AJAX to send a request to the Flask route for removing the resume
+      var xhr = new XMLHttpRequest();
+      xhr.open("POST", "{{ url_for('routes.remove_resume', user_id=user.id) }}", true);
+      xhr.onreadystatechange = function () {
+        if (xhr.readyState == 4 && xhr.status == 200) {
+          // Reload the page after successful removal
+          location.reload();
+        }
+      };
+      xhr.send();
+    }
+
+    // Function to handle profile picture upload
+    function uploadProfilePicture() {
+        var profilePictureInput = document.getElementById("profilePictureInput");
+        profilePictureInput.click();
+    }
+
+    // Function to handle file input change for profile picture
+    function handleProfilePictureChange() {
+      var profilePictureInput = document.getElementById("profilePictureInput");
+      var profilePictureDisplay = document.getElementById("profilePictureDisplay");
+
+      if (profilePictureInput?.files?.length > 0) {
+          var selectedImage = URL.createObjectURL(profilePictureInput.files[0]);
+          profilePictureDisplay.src = selectedImage;
+
+          // Submit the form (you can modify this based on your needs)
+          var form = profilePictureInput.closest("form");
+          form.submit();
+      } else {
+          console.error("Profile picture input is null or empty.");
+      }
+    }
+
+    // Add an event listener to handle file input change for profile picture
+    document.getElementById("profilePictureInput").addEventListener("change", handleProfilePictureChange);
+
+    // Function to trigger the profile picture upload
+    function triggerProfilePictureUpload() {
+      var profilePictureInput = document.getElementById("profilePictureInput");
+      if (profilePictureInput) {
+          profilePictureInput.click();
+      }
+    }
+
+    </script>
+  </body>
+</html>
